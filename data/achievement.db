@@ -1,0 +1,206 @@
+ID 1
+	CATEGORY 0
+	NAME 11th Level
+	DESC Reach the 11th level.
+	MESSAGE $n has reached the 11th level!
+	POINTS 10
+	VALUE 11
+END
+
+ID 2
+	CATEGORY 0
+	NAME 21th Level
+	DESC Reach the 21th level.
+	MESSAGE $n has reached the 21th level!
+	POINTS 10
+	VALUE 21
+END
+
+ID 3
+	CATEGORY 0
+	NAME 31th Level
+	DESC Reach the 31th level.
+	MESSAGE $n has reached the 31th level!
+	POINTS 10
+	VALUE 31
+END
+
+ID 4
+	CATEGORY 0
+	NAME 41th Level
+	DESC Reach the 41th level.
+	MESSAGE $n has reached the 41th level!
+	POINTS 10
+	VALUE 41
+END
+
+ID 5
+	CATEGORY 0
+	NAME 51th Level
+	DESC Reach the 51th level.
+	MESSAGE $n has reached the 51th level!
+	POINTS 10
+	VALUE 51
+END
+
+ID 6
+	CATEGORY 0
+	NAME 61th Level
+	DESC Reach the 61th level.
+	MESSAGE $n has reached the 61th level!
+	POINTS 10
+	VALUE 61
+END
+
+ID 7
+	CATEGORY 0
+	NAME 71th Level
+	DESC Reach the 71th level.
+	MESSAGE $n has reached the 71th level!
+	POINTS 10
+	VALUE 71
+END
+
+ID 8
+	CATEGORY 0
+	NAME 81th Level
+	DESC Reach the 81th level.
+	MESSAGE $n has reached the 81th level!
+	POINTS 10
+	VALUE 81
+END
+
+ID 9
+	CATEGORY 0
+	NAME 91th Level
+	DESC Reach the 91th level.
+	MESSAGE $n has reached the 91th level!
+	POINTS 10
+	VALUE 91
+END
+
+ID 10
+	CATEGORY 0
+	NAME 100th Level
+	DESC Reach the 100th level.
+	MESSAGE $n has reached the 100th level!
+	POINTS 20
+	VALUE 100
+END
+
+ID 11
+	CATEGORY 4
+	NAME 25 Quests
+	DESC Complete 25 quests.
+	MESSAGE $n has completed 25 quests!
+	POINTS 5
+	VALUE 25
+END
+
+ID 12
+	CATEGORY 4
+	NAME 100 Quests
+	DESC Complete 100 quests.
+	MESSAGE $n has completed 100 quests!
+	POINTS 5
+	VALUE 100
+END
+
+ID 13
+	CATEGORY 4
+	NAME 250 Quests
+	DESC Complete 250 quests.
+	MESSAGE $n has completed 250 quests!
+	POINTS 10
+	VALUE 250
+END
+
+ID 14
+	CATEGORY 4
+	NAME 500 Quests
+	DESC Complete 500 quests.
+	MESSAGE $n has completed 500 quests!
+	POINTS 20
+	VALUE 500
+END
+
+ID 15
+	CATEGORY 31
+	NAME Join a guild
+	Desc Become a member of a guild.
+	MESSAGE $n has joined a guild!
+	POINTS 50
+	VALUE 1
+END
+
+ID 16
+	CATEGORY 32
+	NAME Novice Scavenger
+	DESC Reach 100 in Scavenging.
+	MESSAGE $n is a Novice Scavenger!
+	POINTS 5
+	VALUE 118
+	COUNT 100
+END
+
+ID 17
+	CATEGORY 32
+	NAME Apprentice Scavenger
+	DESC Reach 200 in Scavenging.
+	MESSAGE $n is an Apprentice Scavenger!
+	POINTS 5
+	VALUE 118
+	COUNT 200
+END
+
+ID 18
+	CATEGORY 32
+	NAME Journeyman Scavenger
+	DESC Reach 300 in Scavenging.
+	MESSAGE $n is a Journeyman Scavenger!
+	POINTS 5
+	VALUE 118
+	COUNT 300
+END
+
+ID 19
+	CATEGORY 32
+	NAME Expert Scavenger
+	DESC Reach 400 in Scavenging.
+	MESSAGE $n is an Expert Scavenger!
+	POINTS 5
+	VALUE 118
+	COUNT 400
+END
+
+ID 20
+	CATEGORY 32
+	NAME Artisan Scavenger
+	DESC Reach 500 in Scavenging.
+	MESSAGE $n is an Artisan Scavenger!
+	POINTS 5
+	VALUE 118
+	COUNT 500
+END
+
+ID 21
+	CATEGORY 32
+	NAME Master Scavenger
+	DESC Reach 600 in Scavenging.
+	MESSAGE $n is a Master Scavenger!
+	POINTS 5
+	VALUE 118
+	COUNT 600
+END
+
+ID 22
+	CATEGORY 32
+	NAME Grandmaster Scavenger
+	DESC Reach 700 in Scavenging.
+	MESSAGE $n is a Grandmaster Scavenger!
+	POINTS 5
+	VALUE 118
+	COUNT 700
+END
+
+EOF

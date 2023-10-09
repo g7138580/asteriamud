@@ -1,0 +1,1232 @@
+ID 0
+END
+
+ID 1
+	NAME Haste
+	DESC Hasted
+	HELP Reduces the delay, casting, and charge times of all actions performed by 20%. This effect cannot reduce the delay of actions below the floor.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You begin moving with blinding speed.
+		OTHERS $n begins moving with blinding speed.
+		SELFTARGET You begin moving with blinding speed.
+	END
+	EMOTE
+		TYPE 1
+		TARGET Your movements returns to normal speed.
+		OTHERS $n returns to $s normal speed.
+		SELFTARGET Your movements returns to normal speed.
+	END
+END
+
+ID 2
+	NAME Slow
+	DESC Slowed
+	RESIST
+	HELP Increases the delay of all actions by either 20% or 5, whichever is larger. Casting and charge times increase by 20%.
+	EMOTE
+		TYPE 0
+		TARGET You are slowed for $T.
+		OTHERS $n is slowed for $T.
+		SELFTARGET You are slowed for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer slowed.
+		OTHERS $n is no longer slowed.
+		SELFTARGET You are no longer slowed.
+	END
+	EMOTE
+		TYPE 2
+		SELF $N resists being slowed.
+		TARGET You resist being slowed.
+		OTHERS $n resists being slowed.
+		SELFTARGET You resist being slowed.
+	END
+END
+
+ID 3
+	NAME Hidden
+	DESC Hidden
+	HELP Being hidden prevents others from seeing you move and act. Denizens have a chance of spotting you, based on your skill level in Stealth.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are now hidden.
+		SELFTARGET You are now hidden.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You come out of hiding.
+		OTHERS $n comes out of hiding.
+		SELFTARGET You come out of hiding.
+	END
+END
+
+ID 4
+	NAME Fire Attuned
+	DESC Attuned to Fire
+	HELP Causes all non-elemental attacks to become fire elemental. If an action's element was already fire, increase damage by 25%.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET Flames encircle you.
+		OTHERS Flames encircle $N.
+		SELFTARGET Flames encircle you.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The flames encircling you extinguish.
+		OTHERS The flames encircling $N extinguish.
+		SELFTARGET The flames encircling you extinguish.
+	END
+END
+
+ID 5
+	NAME Ice Attuned
+	DESC Attuned to Ice
+	HELP Causes all non-elemental attacks to become ice elemental. If an action's element was already ice, increase damage by 25%.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET Ice crystals form in your veins, protruding icicles from your skin.
+		OTHERS Ice crystals form in $s veins, protruding icicles from $s skin.
+		SELFTARGET Ice crystals form in your veins, protruding icicles from your skin.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The icicles protruding from your skin retract and disappear.
+		OTHERS The icicles protruding from $N retract and disappear.
+		SELFTARGET The icicles protruding from your skin retract and disappear.
+	END
+END
+
+ID 6
+	NAME Lightning Attuned
+	DESC Attuned to Lightning
+	HELP Causes all non-elemental attacks to become lightning elemental. If an action's element was already lightning, increase damage by 25%.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET Sparks of lightning envelop you.
+		OTHERS Sparks of lightning envelop $N.
+		SELFTARGET Sparks of lightning envelop you.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The sparks of lightning around you dissipate.
+		OTHERS The sparks of lightning around $N dissipate.
+		SELFTARGET The sparks of lightning around you dissipate.
+	END
+END
+
+ID 7
+	NAME Water Attuned
+	DESC Attuned to Water
+	HELP Causes all non-elemental attacks to become water elemental. If an action's element was already water, increase damage by 25%.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET Water bubbles form around you.
+		OTHERS Water bubbles form around $N.
+		SELFTARGET Water bubbles form around you.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The water bubbles around you pop.
+		OTHERS The water bubbles around $N pop.
+		SELFTARGET The water bubbles around you pop.
+	END
+END
+
+ID 8
+	NAME Shadow Attuned
+	DESC Attuned to Shadow
+	HELP Causes all non-elemental attacks to become shadow elemental. If an action's element was already shadow, increase damage by 25%.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET Dark shadows cascade around you to form a black rotating cocoon.
+		OTHERS Dark shadows cascade around $N to form a black rotating cocoon.
+		SELFTARGET Dark shadows cascade around you to form a black rotating cocoon.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The shadowy cocoon surrounding you fades into nothing once more.
+		OTHERS The shadowy cocoon surrounding $N fades into nothing once more.
+		SELFTARGET The shadowy cocoon surrounding you fades into nothing once more.
+	END
+END
+
+ID 9
+	NAME Radiant Attuned
+	DESC Attuned to Radiant
+	HELP Causes all non-elemental attacks to become radiant elemental. If an action's element was already radiant, increase damage by 25%.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET Blue and white lights envelop you.
+		OTHERS Blue and white lights envelop $N.
+		SELFTARGET Blue and white lights envelop you.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The blue and white lights around you dissipate.
+		OTHERS The blue and white lights around $N dissipate.
+		SELFTARGET The blue and white lights around you dissipate.
+	END
+END
+
+ID 10
+	NAME Silence
+	DESC Silenced
+	RESIST
+	HELP You are unable to cast spells.
+	EMOTE
+		TYPE 0
+		TARGET You are silenced for $T.
+		OTHERS $n is silenced for $T.
+		SELFTARGET You are silenced for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer silenced.
+		OTHERS $n is no longer silenced.
+		SELFTARGET You are no longer silenced.
+	END
+END
+
+ID 11
+	NAME Stun
+	DESC Stunned
+	RESIST
+	HELP You are unable to move or act.
+	EMOTE
+		TYPE 0
+		TARGET You are stunned for $T.
+		OTHERS $n is stunned for $T.
+		SELFTARGET You are stunned for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer stunned.
+		OTHERS $n is no longer stunned.
+		SELFTARGET You are no longer stunned.
+	END
+	EMOTE
+		TYPE 2
+		SELF $N resists being stunned.
+		TARGET You resist being stunned.
+		OTHERS $N resists being stunned.
+		SELFTARGET You resist being stunned.
+	END
+END
+
+ID 12
+	NAME Prone
+	DESC Prone
+	RESIST
+	HELP Being knocked prone, you must stand up before any other actions can be taken.
+	EMOTE
+		TYPE 0
+		TARGET You are knocked prone.
+		OTHERS $n is knocked prone.
+		SELFTARGET You are knocked prone.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You get up.
+		OTHERS $n gets up.
+		SELFTARGET You get up.
+	END
+	EMOTE
+		TYPE 2
+		TARGET You resist being knocked prone.
+		OTHERS $n resists being knocked prone.
+		SELFTARGET You resist being knocked prone.
+	END
+END
+
+ID 13
+	NAME Poison
+	DESC Poisoned
+	RESIST
+	HELP Every 12 seconds, take damage equal to 20% of your current health.
+	EMOTE
+		TYPE 0
+		TARGET You are poisoned for $T.
+		OTHERS $n is poisoned for $T.
+		SELFTARGET You are poisoned for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer poisoned.
+		OTHERS $n is no longer poisoned.
+		SELFTARGET You are no longer poisoned.
+	END
+END
+
+ID 14
+	NAME Regen
+	DESC Regenerating Health
+	HELP Restore health equal to your Vitality * 4 * tier every 5 seconds. This effect occurs even in combat.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are regenerating health.
+		OTHERS $n is regenerating health.
+		SELFTARGET You are regenerating health.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You stop regenerating health.
+		OTHERS $n stops regenerating health.
+		SELFTARGET You stop regenerating health.
+	END
+END
+
+ID 15
+	NAME Refresh
+	DESC Regenerating Mana
+	HELP Restore mana equal to your Spirit * ( tier + 1 ) every 5 seconds. This effect occurs even in combat.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are regenerating mana.
+		OTHERS $n is regenerating mana.
+		SELFTARGET You are regenerating mana.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You stop regenerating mana.
+		OTHERS $n stops regenerating mana.
+		SELFTARGET You stop regenerating mana.
+	END
+END
+
+ID 16
+	NAME Blind
+	DESC Blinded
+	RESIST
+	HELP Reduce the chance of success of weapon attacks by 30.
+	EMOTE
+		TYPE 0
+		TARGET Your vision is obscured for $T.
+		OTHERS $n is unable to see clearly for $T.
+		SELFTARGET Your vision is obscured for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET Your vision is no longer obscured.
+		OTHERS $n can see clearly again.
+		SELFTARGET Your vision is no longer obscured.
+	END
+END
+
+ID 17
+	NAME Curse
+	DESC Cursed
+	RESIST
+	HELP Whenever you receive damage, your delay is increased by 2. Any attacks against you have a minimum chance of success of 75.
+	EMOTE
+		TYPE 0
+		TARGET You are cursed for $T.
+		OTHERS $n is cursed for $T.
+		SELFTARGET You are cursed for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer cursed.
+		OTHERS $n is no longer cursed.
+		SELFTARGET You are no longer cursed.
+	END
+END
+
+ID 18
+	NAME Strong
+	DESC Strong
+	HELP Deal 25% more damage when using physical abilities. Heal 25% more health with abilities that are based on Strength.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are strengthened.
+		OTHERS $n is strengthened.
+		SELFTARGET You are strengthened.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer strengthened.
+		OTHERS $n is no longer strengthened.
+		SELFTARGET You are no longer strengthened.
+	END
+END
+
+ID 19
+	NAME Weak
+	DESC Weakened
+	RESIST
+	HELP Deal 25% less damage when using physical abilities. Heal 25% less health with abilities that are based on Strength.
+	EMOTE
+		TYPE 0
+		TARGET You are weakened for $T.
+		OTHERS $n is weakened for $T.
+		SELFTARGET You are weakened for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer weakened.
+		OTHERS $n is no longer weakened.
+		SELFTARGET You are no longer weakened.
+	END
+END
+
+ID 20
+	NAME Lucid
+	DESC Lucid
+	HELP Deal 25% more damage when using magical abilities. Heal 25% more health with abilites that are based on Intellect.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are lucid.
+		OTHERS $n is lucid.
+		SELFTARGET You are lucid.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer lucid.
+		OTHERS $n is no longer lucid.
+		SELFTARGET You are no longer lucid.
+	END
+END
+
+ID 21
+	NAME Muddle
+	DESC Muddled
+	RESIST
+	HELP Deal 25% less damage when using magical abilities. Heal 25% less health with abilites that are based on Intellect.
+	EMOTE
+		TYPE 0
+		TARGET You are muddled for $T.
+		OTHERS $n is muddled for $T.
+		SELFTARGET You are muddled for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer muddled.
+		OTHERS $n is no longer muddled.
+		SELFTARGET You are no longer muddled.
+	END
+END
+
+ID 22
+	NAME Immobile
+	DESC Immobilized
+	RESIST
+	HELP You are unable to move, advance, or retreat.
+	EMOTE
+		TYPE 0
+		TARGET You are immobilized for $T.
+		OTHERS $n is immobilized for $T.
+		SELFTARGET You are immobilized for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer immobilized.
+		OTHERS $n is no longer immobilized.
+		SELFTARGET You are no longer immobilized.
+	END
+END
+
+ID 23
+	NAME Brutal
+	DESC Brutal
+	HELP Increases your Critical Chance by 10.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are brutal.
+		OTHERS $n is brutal.
+		SELFTARGET You are brutal.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer brutal.
+		OTHERS $n is no longer brutal.
+		SELFTARGET You are no longer brutal.
+	END
+END
+
+ID 24
+	NAME Exposed
+	DESC Exposed
+	RESIST
+	HELP Take 25% more damage against physical attacks.
+	EMOTE
+		TYPE 0
+		TARGET You are exposed for $T.
+		OTHERS $n is exposed for $T.
+		SELFTARGET You are exposed for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer exposed.
+		OTHERS $n is no longer exposed.
+		SELFTARGET You are no longer exposed.
+	END
+END
+
+ID 25
+	NAME Protect
+	DESC Protected
+	HELP Take 25% less damage against physical attacks.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are protected.
+		OTHERS $n is protected.
+		SELFTARGET You are protected.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer protected.
+		OTHERS $n is no longer protected.
+		SELFTARGET You are no longer protected.
+	END
+END
+
+ID 26
+	NAME Vulnerable
+	DESC Vulnerable
+	RESIST
+	HELP Take 25% more damage against magical attacks.
+	EMOTE
+		TYPE 0
+		TARGET You are vulnerable for $T.
+		OTHERS $n is vulnerable for $T.
+		SELFTARGET You are vulnerable for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer vulnerable.
+		OTHERS $n is no longer vulnerable.
+		SELFTARGET You are no longer vulnerable.
+	END
+END
+
+ID 27
+	NAME Shield
+	DESC Shielded
+	HELP Take 25% less damage against magical attacks.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are shielded.
+		OTHERS $n is shielded.
+		SELFTARGET You are shielded.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer shielded.
+		OTHERS $n is no longer shielded.
+		SELFTARGET You are no longer shielded.
+	END
+END
+
+ID 28
+	NAME Bleed
+	DESC Bleeding
+	RESIST
+	HELP Take your tier in damage every 1/5th of a second.
+	EMOTE
+		TYPE 0
+		TARGET You are bleeding for $T.
+		OTHERS $n is bleeding for $T.
+		SELFTARGET You are bleeding for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer bleeding.
+		OTHERS $n is no longer bleeding.
+		SELFTARGET You are no longer bleeding.
+	END
+END
+
+ID 29
+	NAME Pain
+	DESC in Pain
+	RESIST
+	HELP You are unable to use techniques.
+	EMOTE
+		TYPE 0
+		TARGET You are in pain for $T.
+		OTHERS $n is in pain for $T.
+		SELFTARGET You are in pain for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer in pain.
+		OTHERS $n is no longer in pain.
+		SELFTARGET You are no longer in pain.
+	END
+END
+
+ID 30
+	NAME Confusion
+	DESC Confused
+	RESIST
+	HELP Chance of not being able to perform an action. May move in a random direction.
+	EMOTE
+		TYPE 0
+		TARGET You are confused for $T.
+		OTHERS $n is confused for $T.
+		SELFTARGET You are confused for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer confused.
+		OTHERS $n is no longer confused.
+		SELFTARGET You are no longer confused.
+	END
+END
+
+ID 31
+	NAME Sluggish
+	DESC Sluggish
+	RESIST
+	HELP Your evasion is reduced by 10.
+	EMOTE
+		TYPE 0
+		SELF $N is sluggish for $T.
+		TARGET You are sluggish for $T.
+		OTHERS $N is sluggish for $T.
+		SELFTARGET You are sluggish for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer sluggish.
+		OTHERS $n is no longer sluggish.
+		SELFTARGET You are no longer sluggish.
+	END
+	EMOTE
+		TYPE 2
+		SELF $N resists becoming sluggish.
+		TARGET You resist becoming sluggish.
+		OTHERS $N resists becoming sluggish.
+		SELFTARGET You resist becoming sluggish.
+	END
+END
+
+ID 32
+	NAME Susceptible
+	DESC Susceptible
+	RESIST
+	HELP The chance of success of negative status effects against you is increased by 20.
+	EMOTE
+		TYPE 0
+		TARGET You are susceptible for $T.
+		OTHERS $n is susceptible for $T.
+		SELFTARGET You are susceptible for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer susceptible.
+		OTHERS $n is no longer susceptible.
+		SELFTARGET You are no longer susceptible.
+	END
+END
+
+ID 33
+	NAME Provoke
+	DESC Provoked
+	RESIST
+	HELP You may only target yourself and the target that provoked you.
+	EMOTE
+		TYPE 0
+		TARGET You are provoked by $N for $T.
+		OTHERS $n is provoked by $N for $T.
+		SELFTARGET You are provoked by $N for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer provoked.
+		OTHERS $n is no longer provoked.
+		SELFTARGET You are no longer provoked.
+	END
+END
+
+ID 34
+	NAME Sleep
+	DESC Sleeping
+	RESIST
+	HELP You are unable to perform actions while asleep. Taking direct damage will wake you. Cannot perform reactions.
+	EMOTE
+		TYPE 0
+		TARGET You are asleep for $T.
+		OTHERS $n is asleep for $T.
+		SELFTARGET You are asleep for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You wake up.
+		OTHERS $n wakes up.
+		SELFTARGET You wake up.
+	END
+	EMOTE
+		TYPE 2
+		SELF $N resists falling asleep.
+		TARGET You resist falling asleep.
+		OTHERS $N resists falling asleep.
+		SELFTARGET You resist falling asleep.
+	END
+END
+
+ID 35
+	NAME Polymorph
+	DESC Polymorphed
+	RESIST
+	HELP You are polymorphed into a critter. You may not use prepared abilities. Cannot perform reactions.
+	EMOTE
+		TYPE 0
+		TARGET You are polymorphed for $T.
+		OTHERS $n is polymorphed for $T.
+		SELFTARGET You are polymorphed for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You transform back to normal..
+		OTHERS $n transforms back to normal.
+		SELFTARGET You transform back to normal..
+	END
+END
+
+ID 36
+	NAME Fear
+	DESC Frightened
+	RESIST
+	HELP You are only able to retreat and move. Chance of cowering in fear, resulting in no actions performed. Cannot perform reactions.
+	EMOTE
+		TYPE 0
+		TARGET You are frightened for $T.
+		OTHERS $n is frightened for $T.
+		SELFTARGET You are frightened for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer afraid.
+		OTHERS $n is no longer afraid.
+		SELFTARGET You are no longer afraid.
+	END
+	EMOTE
+		TYPE 18
+		TARGET You resist being frightened.
+		OTHERS $n resists being frightened.
+		SELFTARGET You resist being frightened.
+	END
+END
+
+ID 37
+	NAME Accurate
+	DESC Accurate
+	HELP Your accuracy is increased by 10.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are accurate.
+		OTHERS $n is accurate.
+		SELFTARGET You are accurate.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer accurate.
+		OTHERS $n is no longer accurate.
+		SELFTARGET You are no longer accurate.
+	END
+END
+
+ID 38
+	NAME Evasive
+	DESC Evasive
+	HELP Your evasion is increased by 10.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are evasive.
+		OTHERS $n is evasive.
+		SELFTARGET You are evasive.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer evasive.
+		OTHERS $n is no longer evasive.
+		SELFTARGET You are no longer evasive.
+	END
+END
+
+ID 39
+	NAME Levitate
+	DESC Levitating
+	HELP You float, preventing ground based attacks.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You levitate.
+		OTHERS $n begins levitating.
+		SELFTARGET You levitate.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer accurate.
+		OTHERS $n is no longer accurate.
+		SELFTARGET You are no longer accurate.
+	END
+END
+
+ID 40
+	NAME Reflect
+	DESC Reflecting Spells
+	HELP Negative spells targeted at you will reflect, hitting a random enemy.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You reflect spells.
+		OTHERS $n is reflecting spells.
+		SELFTARGET You reflect spells.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You no longer reflect spells.
+		OTHERS $n no longer reflects spells.
+		SELFTARGET You no longer reflect spells.
+	END
+END
+
+ID 41
+	NAME Focus
+	DESC Focused
+	HELP The chance of success of all your abilities is increased by 10.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are focused.
+		OTHERS $n is focused.
+		SELFTARGET You are focused.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer focused.
+		OTHERS $n is no longer focused.
+		SELFTARGET You are no longer focused.
+	END
+END
+
+ID 42
+	NAME Veil
+	DESC Veiled
+	HELP The chance of success of negative status effects against you is decreased by 20. Reduces the duration of any that succeed in affecting you.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are veiled.
+		OTHERS $n is veiled.
+		SELFTARGET You are veiled.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer veiled.
+		OTHERS $n is no longer veiled.
+		SELFTARGET You are no longer veiled.
+	END
+END
+
+ID 43
+	NAME Vigilance
+	DESC Vigilant
+	HELP Any attacks against you have a maximum Chance of Success of 75. You are immune to effects targeting you that would increase your Delay.
+	BUFF
+	EMOTE
+		TYPE 0
+		TARGET You are vigilant.
+		OTHERS $n is vigilant.
+		SELFTARGET You are vigilant.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer vigilant.
+		OTHERS $n is no longer vigilant.
+		SELFTARGET You are no longer vigilant.
+	END
+END
+
+ID 44
+	NAME Disease
+	DESC Diseased
+	RESIST
+	HELP All attributes are reduced by 1.
+	EMOTE
+		TARGET You are diseased for $T.
+		OTHERS $n is diseased.
+		SELFTARGET You are diseased for $T.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer diseased.
+		OTHERS $n is no longer diseased.
+		SELFTARGET You are no longer diseased.
+	END
+END
+
+ID 45
+	NAME Burn
+	DESC Burning
+	HELP You take damage over time.
+END
+
+ID 46
+	NAME Drunk
+	BUFF
+	Desc Drunk
+	HELP Drunk!
+	EMOTE
+		TYPE 2
+		TARGET You are tipsy.
+		OTHERS $n is tipsy.
+		SELFTARGET You are tipsy.
+	END
+	EMOTE
+		TYPE 3
+		TARGET You feel merry.
+		OTHERS $n is feeling merry.
+		SELFTARGET You feel merry.
+	END
+	EMOTE
+		TYPE 4
+		TARGET You are drunk.
+		OTHERS $n is drunk.
+		SELFTARGET You are drunk.
+	END
+	EMOTE
+		TYPE 5
+		TARGET You are hammered.
+		OTHERS $n is hammered.
+		SELFTARGET You are hammered.
+	END
+	EMOTE
+		TYPE 6
+		TARGET You are plastered.
+		OTHERS $n is plastered.
+		SELFTARGET You are plastered.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer drunk.
+		OTHERS $n is no longer drunk.
+		SELFTARGET You are no longer drunk.
+	END
+END
+
+ID 47
+	NAME Fire Resist
+	DESC Fire Resistant
+	BUFF
+	EMOTE
+		TARGET Flames appear around you.
+		OTHERS Flames appear around $N.
+		SELFTARGET Flames appear around you.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The flames around you flicker out.
+		OTHERS The flames around $N flicker out.
+		SELFTARGET The flames around you flicker out.
+	END
+END
+
+ID 48
+	NAME Ice Resist
+	DESC Ice Resistant
+	BUFF
+	EMOTE
+		TARGET Ice shards stick out from your skin.
+		OTHERS Ice shards stick out from $s skin.
+		SELFTARGET Ice shards stick out from your skin.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The ice shards on your skin melt away.
+		OTHERS The ice shards on $N melt away.
+		SELFTARGET The ice shards on your skin melt away.
+	END
+END
+
+ID 49
+	NAME Lightning Resist
+	DESC Lightning Resistant
+	BUFF
+	EMOTE
+		TARGET A field of lightning bolts surround you.
+		OTHERS A field of lightning bolts surround $N.
+		SELFTARGET A field of lightning bolts surround you.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The field of lightning around you dissipates.
+		OTHERS The field of lightning around $N dissipates.
+		SELFTARGET The field of lightning around you dissipates.
+	END
+END
+
+ID 50
+	NAME Water Resist
+	DESC Water Resistant
+	BUFF
+	EMOTE
+		TARGET A wall of water surrounds you.
+		OTHERS A wall of water surrounds $N.
+		SELFTARGET A wall of water surrounds you.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The wall of water surrounding you evaporates.
+		OTHERS The wall of water surrounding $N evaporates.
+		SELFTARGET The wall of water surrounding you evaporates.
+	END
+END
+
+ID 51
+	NAME Shadow Resist
+	DESC Shadow Resistant
+	BUFF
+	EMOTE
+		TARGET Shadows surround you in a protective cocoon.
+		OTHERS Shadows surround $N in a protect cocoon.
+		SELFTARGET Shadows surround you in a protective cocoon.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The shadows around you dissipate.
+		OTHERS The shadows around $N dissipate.
+		SELFTARGET The shadows around you dissipate.
+	END
+END
+
+ID 52
+	NAME Radiant Resist
+	DESC Radiant Resistant
+	BUFF
+	EMOTE
+		TARGET A holy aura emanates from you.
+		OTHERS A holy aura emanates from $N.
+		SELFTARGET Your resistance to radiance increases.
+	END
+	EMOTE
+		TYPE 1
+		TARGET The holy aura around you fades away.
+		OTHERS The holy aura around $N fades away.
+		SELFTARGET The holy aura around you fades away.
+	END
+END
+
+ID 53
+	NAME Freeze
+	DESC Freezing
+	HELP You are frozen and unable to move.
+END
+
+ID 54
+	NAME Invisible
+	DESC Invisible
+	BUFF
+	HELP You are invisible.
+	EMOTE
+		TARGET You slowly fade from view.
+		OTHERS $n slowly fades from view.
+		SELFTARGET You slowly fade from view.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You slowly fade into view.
+		OTHERS $n slowly fades into view.
+		SELFTARGET You slowly fade into view.
+	END
+END
+
+ID 55
+	NAME Encumbered
+	DESC Encumbered
+	HELP You are encumbered.
+	EMOTE
+		TARGET You are encumbered.
+		SELFTARGET You are encumbered.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer encumbered.
+		SELFTARGET You are no longer encumbered.
+	END
+END
+
+ID 56
+	NAME Arcane Strength
+	DESC Arcanely Strengthened
+	HELP Increases Strength by 1.
+	BUFF
+	EMOTE
+		TARGET You are imbued with magical strength.
+		OTHERS $n is imbued with magical strength.
+		SELFTARGET You are imbued with magical strength.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer magically strengthened.
+		OTHERS $N is no longer magically strengthened.
+		SELFTARGET You are no longer magically strengthened.
+	END
+END
+
+ID 57
+	NAME Arcane Vitality
+	DESC Arcanely Toughened
+	HELP Increases Vitality by 1.
+	BUFF
+	EMOTE
+		TARGET You are imbued with magical vitality.
+		OTHERS $n is imbued with magical vitality.
+		SELFTARGET You are imbued with magical vitality.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer magically toughened.
+		OTHERS $N is no longer magically toughened.
+		SELFTARGET You are no longer magically toughened.
+	END
+END
+
+ID 58
+	NAME Arcane Speed
+	DESC Arcanely Quick
+	HELP Increases Speed by 1.
+	BUFF
+	EMOTE
+		TARGET You are imbued with magical speed.
+		OTHERS $n is imbued with magical speed.
+		SELFTARGET You are imbued with magical speed.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer magically fast.
+		OTHERS $N is no longer magically fast.
+		SELFTARGET You are no longer magically fast.
+	END
+END
+
+ID 59
+	NAME Arcane Intellect
+	DESC Arcanely Intelligence
+	HELP Increases Intellect by 1.
+	BUFF
+	EMOTE
+		TARGET You are imbued with magical intelligence.
+		OTHERS $n is imbued with magical intelligence.
+		SELFTARGET You are imbued with magical intelligence.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer magically intelligent.
+		OTHERS $N is no longer magically intelligent.
+		SELFTARGET You are no longer magically intelligent.
+	END
+END
+
+ID 60
+	NAME Arcane Spirit
+	DESC Arcanely Spirited
+	HELP Increases Spirit by 1.
+	BUFF
+	EMOTE
+		TARGET You are imbued with magical spirit.
+		OTHERS $n is imbued with magical spirit.
+		SELFTARGET You are imbued with magical spirit.
+	END
+	EMOTE
+		TYPE 1
+		TARGET You are no longer magically spirited.
+		OTHERS $N is no longer magically spirited.
+		SELFTARGET You are no longer magically spirited.
+	END
+END
+
+ID 61
+	NAME Prepare
+	DESC Preparing
+	BUFF
+	EMOTE
+		TYPE 1
+		TARGET You are no longer preparing your skills.
+		OTHERS $n is no longer preparing $s skills.
+		SELFTARGET You are no longer preparing your skills.
+	END
+END
+
+CANCEL 1 2
+CANCEL 2 1
+CANCEL 4 5
+CANCEL 4 6
+CANCEL 4 7
+CANCEL 4 8
+CANCEL 4 9
+CANCEL 5 4
+CANCEL 5 6
+CANCEL 5 7
+CANCEL 5 8
+CANCEL 5 9
+CANCEL 6 4
+CANCEL 6 5
+CANCEL 6 7
+CANCEL 6 8
+CANCEL 6 9
+CANCEL 7 4
+CANCEL 7 5
+CANCEL 7 6
+CANCEL 7 8
+CANCEL 7 9
+CANCEL 8 4
+CANCEL 8 5
+CANCEL 8 6
+CANCEL 8 7
+CANCEL 8 9
+CANCEL 9 4
+CANCEL 9 5
+CANCEL 9 6
+CANCEL 9 7
+CANCEL 9 8
+CANCEL 12 39
+CANCEL 17 43
+CANCEL 18 19
+CANCEL 19 18
+CANCEL 20 21
+CANCEL 21 20
+CANCEL 24 25
+CANCEL 25 24
+CANCEL 26 27
+CANCEL 27 26
+CANCEL 31 38
+CANCEL 32 42
+CANCEL 38 31
+CANCEL 39 12
+CANCEL 42 32
+CANCEL 43 17
+CANCEL 45 53
+CANCEL 53 45
+CANCEL 56 57
+CANCEL 56 58
+CANCEL 56 59
+CANCEL 56 60
+CANCEL 57 58
+CANCEL 57 59
+CANCEL 57 60
+CANCEL 58 59
+CANCEL 58 60
+CANCEL 59 60
+
+EOF

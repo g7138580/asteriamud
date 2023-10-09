@@ -1,0 +1,624 @@
+ID 0
+	MAPID 357
+	NAME Welcome to Asteria
+	DESC You are somewhere out in the nothingness of space, surrounded by a dark void, while countless stars twinkle in the distance. At the center of the void, an illuminated, swirling vortex draws lost souls toward an infinitely expanding realm of endless adventure. To follow this path, type \C[N]\c or \C[NORTH]\c. \C[HELP MOVEMENT]\c will provide more details.
+	SECTOR 1
+	FLAGS 1028
+	EXIT
+		DIR N
+		ROOM 6
+	END
+END
+
+ID 1
+	MAPID 358
+	NAME Outerworld Nexus
+	DESC Out of place and time, stars in the sky twinkle as if in rhythm with your thoughts. Pathways lead to large portals in many directions, providing access to far away lands.
+	SECTOR 1
+	SIGN Ludn chats 'you guys got a good player base ready to rock because we know you guys do solid work and it shows here.'~
+	FLAGS 46432302
+	TRAINER 4
+	STATION 4
+	EXIT
+		DIR D
+		ROOM 3
+	END
+END
+
+ID 2
+	MAPID 359
+	NAME End of the Dungeon of Trials
+	DESC You have completed the Dungeon of Trials. The portal \C[NORTH]\c will take you to the center of Hessa, a village on the northwestern side of the main continent, Alarra. Throughout Hessa you will find shops, quests, skill trainers and other points of interest. You will also find monsters to fight and paths leading to the vast world beyond. Remember to look at the many \C[HELP]\c files available and do not be afraid to \C[SHOUT]\c if you need assistance. Welcome to Asteria and good luck, adventurer!
+	SECTOR 1
+	FLAGS 4
+	EXIT
+		DIR S
+		ROOM 4
+	END
+END
+
+ID 3
+	MAPID 360
+	NAME In a Planar Rift
+	DESC You are in a small black void which makes up a fissure in space and time. All around you is darkness and you are unable to move in any direction.
+	SECTOR 1
+	FLAGS 4
+END
+
+ID 4
+	MAPID 361
+	NAME In the Dungeon of Trials
+	DESC If you get lost while exploring the realm of Asteria, you can use a Recall Stone to return to your home. Your starting home is the Village of Hessa, but you can change this later. See ^CHELP HOME^w if you want to learn more. 
+	SECTOR 1
+	SIGN \C[NORTH]\c - Complete the Dungeon of Trials/n\C[SOUTH]\c - Back to Combat and Hunting Area~
+	FLAGS 4
+	EXIT
+		DIR N
+		ROOM 2
+	END
+	EXIT
+		DIR S
+		ROOM 7
+	END
+END
+
+ID 5
+	MAPID 362
+	NAME At the Entrance to a Dungeon
+	DESC There is a tall, rounded archway of grey stone to the north, marking the entrance to a dungeon. Only darkness can be seen in every other direction. Your eyes are drawn to the flickering brass lanterns on either side of the stone archway. You can use \C[LOOK LANTERNS]\c to learn more about them. 
+	SECTOR 1
+	FLAGS 1028
+	EXIT
+		DIR N
+		ROOM 6
+	END
+	EXIT
+		DIR S
+		ROOM 0
+	END
+	EXTRA lanterns~ The flickering brass lanterns hang from spikes hammered into the stone archway. You could examine the lanterns more closely by using \C[EXAMINE LANTERNS]\c.
+END
+
+ID 6
+	MAPID 363
+	NAME In the Dungeon of Trials
+	DESC The small, square chamber is made up entirely out of slightly rounded grey stones. There are a few scattered piles of golden hay in the darkened corners of the chamber. The ceiling is quite low, and the grey stone floor is somewhat dirty. An old, robed half-elf stands at the center of the chamber, and he appears to be beckoning toward you. Use \C[QUEST]\c to view and accept the quest here. 
+	SECTOR 1
+	FLAGS 516
+	QUEST 990
+	EXIT
+		DIR N
+		ROOM 23
+	END
+	EXIT
+		DIR E
+		ROOM 8
+	END
+	TRIGGER 2
+		COMMAND north
+		TEXT if CompletedQuest( ch, 990 ) < 1 then
+    Act( ch, ACT_SELF, NULL, NULL, "The old sage stops you and says, \"Wait, $n. You must complete the quest in this room before continuing. Use \\C[QUEST]\\c to view and accept my quest.\"" )
+else
+    MoveMobile( ch, north )
+end
+@
+	END
+END
+
+ID 7
+	MAPID 364
+	NAME In the Dungeon of Trials
+	DESC You are in a large, rounded chamber of darkened grey stone, which is well-lit by a massive chandelier of iron hanging above. A fae woman hovers in the air near a trapdoor at the center of the room, while the curved walls are lined with cave mouths leading to nearby alcoves.
+	SECTOR 1
+	SIGN \C[EAST]\c - Learn about Magic and Spellcasting/n\C[WEST]\c - Learn about Physical Combat/n\C[DOWN]\c - Practice Hunting Area (use \C[OPEN DOWN]\c)/n\C[NORTH]\c - Continue Dungeon of Trials/n\C\C\C[SOUTH]\c - Character Advancement~
+	FLAGS 1036
+	QUEST 995
+	EXIT
+		DIR N
+		ROOM 4
+	END
+	EXIT
+		DIR E
+		ROOM 10
+	END
+	EXIT
+		DIR S
+		ROOM 25
+	END
+	EXIT
+		DIR W
+		ROOM 9
+	END
+	EXIT
+		DIR D
+		ROOM 11
+		DESC trapdoor
+		FLAGS 1
+	END
+	TRIGGER 2
+		COMMAND north
+		TEXT if CompletedQuest( ch, 995 ) < 1 then
+    Act( ch, ACT_SELF, NULL, NULL, "The friendly fae stops you and says, \"Wait, $n. You must complete the quest in this room before continuing. Use \\C[QUEST]\\c to view and accept my quest.\"" )
+else
+    MoveMobile( ch, north )
+end
+@
+	END
+END
+
+ID 8
+	MAPID 365
+	NAME In a Library
+	DESC The cramped chamber has walls of rounded grey stone which are very close together. The ceiling is so high above that you cannot see it. The eastern wall is mostly obscured by a very tall, wooden bookshelf. Use \C[LOOK BOOKSHELF]\c to learn more about it. 
+	SECTOR 1
+	FLAGS 4
+	EXIT
+		DIR W
+		ROOM 6
+	END
+	EXTRA bookshelf~ The bookshelf is incredibly tall and the book you need is at the very top. Use \C[CLIMB BOOKSHELF]\c to get it.
+	EXTRA wall~ The bookshelf is incredibly tall and the book you need is at the very top. Use \C[CLIMB BOOKSHELF]\c to get it.
+	TRIGGER 0
+		COMMAND climb bookshelf
+		TEXT local vnum = 1759
+
+if MobileHasItem( ch, vnum ) or RoomHasItem( room, vnum ) then
+        Send( ch, "You already have the sage's spellbook." )
+else
+        Send( ch, "You climb to the top of the bookshelf and retrieve the sage's spellbook." )
+        Act( ch, ACT_OTHERS, NULL, NULL, "You see $n reach for a book at the very top of the tall shelf." )
+
+        local item = CreateItem( vnum )
+        GiveItem( ch, item )
+end
+@
+	END
+END
+
+ID 9
+	MAPID 366
+	NAME In a Small Alcove
+	DESC This small alcove is made up of the same darkened grey stones found throughout the dungeon. The chamber is mostly empty, save for a heavily armored dwarf standing near the western wall.
+	SECTOR 1
+	FLAGS 4
+	QUEST 993
+	EXIT
+		DIR E
+		ROOM 7
+	END
+END
+
+ID 10
+	MAPID 367
+	NAME In a Small Alcove
+	DESC This small alcove is made up of the same darkened grey stones found throughout the dungeon. A robed elf stands next to a tall bookshelf against the eastern wall.
+	SECTOR 1
+	FLAGS 4
+	QUEST 992
+	EXIT
+		DIR W
+		ROOM 7
+	END
+	EXTRA bookshelf~ The bookshelf does not contain any tomes, rather it is completely covered with scrolls. Simply use ^CTAKE SCROLL^n to retrieve one. ^n
+	TRIGGER 0
+		COMMAND take tome
+		TEXT if MobileHasItem( ch, 1421 ) then
+	Act( ch, ACT_SELF, NULL, NULL, "You already have one. Use \\C[INV]\\c to see your inventory. Use \\C[READ TOME]\\c to use the tome." )
+else
+	local item = CreateItem( 1421 )
+
+	Act( ch, ACT_SELF, item, NULL, "You retrieve $p from the shelf. Now, simply \\C[READ TOME]\\c to temporarily learn the spell." )
+
+	GiveItem( ch, item )
+end
+@
+	END
+END
+
+ID 11
+	MAPID 368
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. A ladder of the same wood leads above from here.
+	SECTOR 1
+	SIGN Monsters that are considered Peaceful will not attack you unless you attack first. Hostile monsters will attack you on sight. /n/nDifferent monsters in a room can also be targeted by choosing the number for their order in the room, rather than name. For example, ^CATTACK 2^w would cause you to attack the second monster in the room. /n/nYou can ^CLOOK <Monster>^w to learn more about a target and ^CCONSIDER <Monster>^w to predict how challenging the fight would be./n/nUse ^CKL^w to display your kill list and see how many monsters of a certain type you've slain. /n/nUse ^CPOWERATTACK^w to deal double damage at the cost of stamina.~
+	FLAGS 262144
+	EXIT
+		DIR N
+		ROOM 14
+	END
+	EXIT
+		DIR E
+		ROOM 16
+	END
+	EXIT
+		DIR S
+		ROOM 17
+	END
+	EXIT
+		DIR W
+		ROOM 12
+	END
+	EXIT
+		DIR U
+		ROOM 7
+	END
+END
+
+ID 12
+	MAPID 369
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN Asteria has a Queue setting for inputting commands which can be enabled. If a command is entered that is normally not accessible while unbalanced, it will be placed in a command queue. Once you are balanced, the queue will execute the commands in order. This allows you to stack up commands to be executed as soon as possible./n/nThis feature is enabled by default. To disable, use the \C[CONFIG QUEUE]\c command.~
+	FLAGS 262144
+	EXIT
+		DIR N
+		ROOM 13
+	END
+	EXIT
+		DIR E
+		ROOM 11
+	END
+	EXIT
+		DIR S
+		ROOM 19
+	END
+END
+
+ID 13
+	MAPID 370
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN ^nIn the future you will have a variety of abilities, skills, spells, and
+other tricks to make it through tough and complex battles. This area is meant
+to get you familiar with basic combat in Asteria.~
+	FLAGS 262144
+	EXIT
+		DIR E
+		ROOM 14
+	END
+	EXIT
+		DIR S
+		ROOM 12
+	END
+END
+
+ID 14
+	MAPID 371
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN You only need to kill 5 ^RTroll Wizards^n and 5 ^RTroll Warriors^n, but kill as many as you like. You can kill all of the monsters you need and then return to the quest NPCs above when you are ready to complete the quests. Then just enter \C[OFFER]\c 5 times. You do not have to run back and forth to complete the quest after each individual kill.~
+	FLAGS 262144
+	EXIT
+		DIR E
+		ROOM 15
+	END
+	EXIT
+		DIR S
+		ROOM 11
+	END
+	EXIT
+		DIR W
+		ROOM 13
+	END
+END
+
+ID 15
+	MAPID 372
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN Wearing armor can provide protection, as well as enhance your abilities./n/nThere are three types of armor:/n/nClothing provides no armor rating but is the most synergetic armor type forspellcasting./n/nLight armor, such as leather or scale, provides some armor rating and increases with the ^C{LIGHT ARMOR}^n skill./n/nHeavy armor, such as plate mail, provides the highest armor rating and increases with the ^C{HEAVY ARMOR}^n skill./n/nYou have two empty hands and the following equipment slots:/n/nHeadgear/nBody Armor/nLeg Armor/nFootwear/nGauntlet/nOuterwear/nNeck/nRings (2)/n/nShields must be held in the left hand to be used properly.~
+	FLAGS 262144
+	EXIT
+		DIR S
+		ROOM 16
+	END
+	EXIT
+		DIR W
+		ROOM 14
+	END
+END
+
+ID 16
+	MAPID 373
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN Don't hesitate to ask for help if it's needed. You can use \C[WHO]\c to see a list of players online. \C[CHAT] <Message>\c will send a message to the Out of Character (OOC) public channel and \C[SHOUT] <Message>\c will send a message to the In Character (IC) or Role-Playing (RP) public channel. You can use \C[TELL] <Player> <Message>\c to send a private message directly to another player./n/nYou can also use \C[CHANNEL]\c to see a list of channels and \C[LAST <Channel>]\c to list the channel's history of messages./n/nYou can disable any channels you like.~
+	FLAGS 262144
+	EXIT
+		DIR N
+		ROOM 15
+	END
+	EXIT
+		DIR S
+		ROOM 18
+	END
+	EXIT
+		DIR W
+		ROOM 11
+	END
+END
+
+ID 17
+	MAPID 374
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN Use \C[HELP PROMPT]\c to learn about changing your prompt. You can also set a combat prompt by using \C[CPROMPT]\c. This prompt will only appear while you are in combat. \C[CONFIG]\c alone will show a variety of game settings.~
+	FLAGS 262144
+	EXIT
+		DIR N
+		ROOM 11
+	END
+	EXIT
+		DIR E
+		ROOM 18
+	END
+	EXIT
+		DIR W
+		ROOM 19
+	END
+END
+
+ID 18
+	MAPID 375
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN You can use the \C[SORT]\c command to organize your \C[INVENTORY]\c, including stackable items./n/nYou can use \C[LOOK] <Direction>\c to view a nearby room.~
+	FLAGS 262144
+	EXIT
+		DIR N
+		ROOM 16
+	END
+	EXIT
+		DIR W
+		ROOM 17
+	END
+END
+
+ID 19
+	MAPID 376
+	NAME In the Lower Dungeon
+	DESC You are in the lower chambers of the dungeon. The surrounding walls and very low ceiling are made of rounded stones which are dark grey in color. The floor is made up of sturdy wooden planks. Darkness shrouds the corners of the dungeon.
+	SECTOR 1
+	SIGN You can use the \C[DESCRIPTION]\c command to open a text editor and set your description. This is a custom description that people will see when they use \C[LOOK] <Player Name>\c to look at you. The description should be In Character (IC) and fit within the reality of Asteria. Staff may help you adjust the description if there are any issues there. Otherwise, you are encouraged to be as creative and unique or simple and basic as you like. It is your description. You can also set it any time in the future, of course.~
+	FLAGS 262144
+	EXIT
+		DIR N
+		ROOM 12
+	END
+	EXIT
+		DIR E
+		ROOM 17
+	END
+END
+
+ID 20
+	MAPID 377
+	NAME In the Dungeon of Trials
+	DESC This small, square room serves as an antechamber to the larger corridors leading east and west. A solid wooden door has been locked and reinforced to the north. The old, half-elven sage waits patiently near a sign at the center of the chamber.
+	SECTOR 1
+	SIGN ^CEAST^n - Learn about Skills
+^CWEST^n - Learn about Guilds
+^CSOUTH^n - Return to Practice Area
+^CNORTH^n - Continue Dungeon of Trials
+~
+	FLAGS 4
+	EXIT
+		DIR N
+		ROOM 7
+	END
+	EXIT
+		DIR S
+		ROOM 7
+	END
+END
+
+ID 21
+	MAPID 378
+	NAME In a Clothing and Armor Shop
+	DESC This large, rounded alcove is made up of the same darkened grey stones found throughout the dungeon. It appears to be filled with a variety of clothing and armor available for sale to new adventurers.
+	SECTOR 1
+	FLAGS 1028
+	EXIT
+		DIR E
+		ROOM 24
+	END
+END
+
+ID 22
+	MAPID 379
+	NAME In a Weapon Shop
+	DESC This large, rounded alcove is made up of the same darkened grey stones found throughout the dungeon. It appears to be filled with a variety of weapons available for sale to new adventurers.
+	SECTOR 1
+	FLAGS 1028
+	EXIT
+		DIR W
+		ROOM 24
+	END
+END
+
+ID 23
+	MAPID 380
+	NAME In the Dungeon of Trials
+	DESC The rounded chamber of dark grey stone serves as an antechamber to the others nearby. Rounded openings lead into the other corridors of the same stone. There is a sign at the very center of the chamber. Use \C[READ SIGN]\c to read it.
+	SECTOR 1
+	SIGN \C[EAST]\c - Learn about Communication/n\C[WEST]\c - Learn about Helpfiles/n\C[NORTH]\c - Continue to Shops and Items/n\C[SOUTH]\c - Back to Completing Quests~
+	FLAGS 4
+	EXIT
+		DIR N
+		ROOM 24
+	END
+	EXIT
+		DIR E
+		ROOM 28
+	END
+	EXIT
+		DIR S
+		ROOM 6
+	END
+	EXIT
+		DIR W
+		ROOM 29
+	END
+	EXTRA sign~ Use ^CREAD SIGN^n to read i
+END
+
+ID 24
+	MAPID 381
+	NAME In the Dungeon of Trials
+	DESC The rounded chamber of dark grey stone serves as an antechamber to the others nearby. Rounded openings lead into the nearby corridors, while the main tunnel of the dungeon continues north and south. There is a small green goblin at the center of the chamber.
+	SECTOR 1
+	SIGN \C[EAST]\c - Weapon Shop /n\C[WEST]\c - Clothing and Armor Shop /n\C[NORTH]\c - Continue to Character Advancement/n\C[SOUTH]\c - Back to Communication and Helpfiles ~
+	FLAGS 4
+	QUEST 991
+	EXIT
+		DIR N
+		ROOM 25
+	END
+	EXIT
+		DIR E
+		ROOM 22
+	END
+	EXIT
+		DIR S
+		ROOM 23
+	END
+	EXIT
+		DIR W
+		ROOM 21
+	END
+	TRIGGER 2
+		COMMAND north
+		TEXT if CompletedQuest( ch, 991 ) < 1 then
+    Act( ch, ACT_SELF, NULL, NULL, "The grinning goblin stops you and says, \"Wait, $n. You must complete the quest in this room before continuing. Use \\C[QUEST]\\c to view and accept my quest.\"" )
+else
+	MoveMobile( ch, north )
+end
+@
+	END
+END
+
+ID 25
+	MAPID 382
+	NAME In the Dungeon of Trials
+	DESC The rounded chamber of dark grey stone serves as an antechamber to the others nearby. Rounded openings lead into the nearby corridors, while the main tunnel of the dungeon continues north and south. The sounds of fighting can be heard coming from the north. A wooden staircase spirals upward into a small chamber above. 
+	SECTOR 1
+	SIGN \C[EAST]\c - Learn about Skills/n\C[WEST]\c - Learn about Guilds/n\C[NORTH]\c - Continue to Combat/n\C[SOUTH]\c - Back to Shops and Items~
+	FLAGS 4
+	QUEST 994
+	EXIT
+		DIR N
+		ROOM 7
+	END
+	EXIT
+		DIR E
+		ROOM 26
+	END
+	EXIT
+		DIR S
+		ROOM 24
+	END
+	EXIT
+		DIR W
+		ROOM 27
+	END
+	TRIGGER 2
+		COMMAND north
+		TEXT if CompletedQuest( ch, 994 ) < 1 then
+    Act( ch, ACT_SELF, NULL, NULL, "The gnomish lady stops you and says, \"Wait, $n. You must complete the quest in this room before continuing. Use \\C[QUEST]\\c to view and accept my quest.\"" )
+else
+    MoveMobile( ch, north )
+end
+@
+	END
+END
+
+ID 26
+	MAPID 383
+	NAME In a Small Library
+	DESC The chamber is cramped and narrow, with a darkened stone floor and ceiling very high above. Tall, wooden bookshelves make up the walls entirely.
+	SECTOR 1
+	SIGN Please \C[EXAMINE BOOKS]\c, then take one and read it to learn more about skills. You will actually train your skills at a later time.~
+	FLAGS 4
+	EXIT
+		DIR W
+		ROOM 25
+	END
+	EXTRA bookshelves~ The bookshelves are incredibly tall and appear to be filled with countless tomes. The books could be examined more closely.
+	EXTRA shelves~ The bookshelves are incredibly tall and appear to be filled with countless tomes. The books could be examined more closely.
+	EXTRA tomes~ The bookshelves are incredibly tall and appear to be filled with countless tomes. The books could be examined more closely.
+	EXTRA books~ The bookshelves are incredibly tall and appear to be filled with countless tomes. The books could be examined more closely.
+	EXTRA bookshelf~ The bookshelves are incredibly tall and appear to be filled with countless tomes. The books could be examined more closely.
+	TRIGGER 0
+		COMMAND examine books
+		TEXT local vnum = 1765
+
+if MobileHasItem( ch, vnum ) or RoomHasItem( room, vnum ) then
+	Send( ch, "You can only take one." )
+else
+	Act( ch, ACT_SELF, NULL, NULL, "As you examine the books more closely, you realize they are all copies of the same work, and one could easily be taken." )
+	Act( ch, ACT_OTHERS, NULL, NULL, "You see $n examine the books on the bookshelves more closely." )
+	DropItem( room, vnum )
+end
+@
+	END
+END
+
+ID 27
+	MAPID 384
+	NAME In a Small Chamber
+	DESC chamber is cramped and narrow, with a darkened stone floor and ceiling very high above. The walls are dominated by four very different works of art, which include a banner, a tapestry, a painting, and a tattooed animal hide. 
+	SECTOR 1
+	SIGN There are four guilds in Asteria which any player may join. Players may only join one guild and membership is permanent. Each guild has an entry quest located at the guild's main hall, and most players wait until around level 20 before attempting to join./n/nThe ^CArmy of Rhojidan^n - The most elite soldiers and riders in the realms./n/nThe ^CUniversity of Arcana^n - A guild of scholars and powerful spellcasters./n/nThe ^CWild Enclave^n - Barbaric savages who commune with beasts and nature./n/nThe ^CSinshade Family^n - A clan of criminals with dark and mysterious powers./n/nGuilds provide members with a variety of perks, including weapons, clothing and armor, riding mounts and other useful items, as well as unique guild abilities and crafting./n/nSee \C[HELP GUILDS]\c or \C[HELP] <Guild>\c for more information.~
+	FLAGS 4
+	EXIT
+		DIR E
+		ROOM 25
+	END
+	EXTRA banner~ The war banner is flowing and majestic, tailored from a thick blend of black silks, and adorned with countless sapphire gemstones. The intricate designs of the banner are a similar shade of sapphire blue, and they depict a massive and intimidating army of heavily armored warriors on horseback. The top is inscribed with the words, "The Army of Rhojidan."
+	EXTRA tapestry~ The tapestry is long and elegant, with countless shades of purple and cyan. It depicts many robed scholars gathering within a large library. All of the individuals, regardless of age, race, or gender, are seemingly depicted as being very learned and wise. Quite a few appear to be practicing various forms of magic. The top of the tapestry is inscribed with the words, "The University of Arcana."
+	EXTRA painting~ The painting is beautiful and regal, mostly black with varying shades of red, and hung in a flawless, golden frame. The image depicts several villainous looking characters surrounding a table. The individuals look much like thieves or assassins, but some have vampiric or demonic features. The entire group appears to be toasting with golden goblets of blood. The bottom of the frame is inscribed with the words, "The Sinshade Family."
+	EXTRA hide~ The thick, brown fur is dirty and dense, and the hide itself appears quite durable. There are intricate tattoos made in green and yellow inks, depicting a large, roaming clan of savage and barbaric nomads. Some appear to be leading great beasts serving as guardians, while some have fangs, claws, and other animal-like features themselves. The words, "The Wild Enclave," have been tattooed along the top of the hide.
+END
+
+ID 28
+	MAPID 385
+	NAME Dungeon of Trials - Communication
+	DESC Use \C[SAY] <Message>\c to speak with other players in the room. The \C[WHO]\c command will list all visible players online. You can use \C[TELL] <Player> <Message>\c to send a private message. \C[SHOUT]\c and \C[CHAT]\c will send a message to all players online, and \C[NEWBIECHAT]\c can be used to request help. All channels are considered In Character (IC) except for \C[CHAT]\c and \C[NEWBIECHAT]\c.
+	SECTOR 1
+	FLAGS 1028
+	EXIT
+		DIR W
+		ROOM 23
+	END
+END
+
+ID 29
+	MAPID 386
+	NAME Dungeon of Trials - Helpfiles
+	DESC There are many helpfiles available to provide you with information on how to play the game. You can use \C[HELP] <Topic>\c to see helpful information about a specific topic. Entering \C[HELP]\c alone will display a list of commonly used game commands.
+	SECTOR 1
+	FLAGS 1028
+	EXIT
+		DIR E
+		ROOM 23
+	END
+END
+
+ID 30
+	MAPID 1
+	NAME Dungeon of Trials - Enchanting
+	DESC This is a rounded chamber of dark grey stone in a small tower atop the dungeon. Light dances along the stone from the flickering flames produced by torches affixed to the walls. There is a strange table at the center of the room which is covered with magical carvings and melted candles. A robed elf stands next to the table, seemingly awaiting your approach.
+	SIGN This room can be used to learn about {ENCHANTING}.~
+	FLAGS 4
+	QUEST 1056
+	STATION 4
+END
+
+EOF

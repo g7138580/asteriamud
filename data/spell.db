@@ -1,0 +1,3608 @@
+ID 1
+	NAME Attack
+	COMMAND attack
+	TARGET 3
+	KEYWORD 2050
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+END
+
+ID 2
+	NAME Fireball
+	COMMAND fireball
+	COST 10
+	TARGET 3
+	KEYWORD 13
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 20
+	CHARGE 15
+	TIER 1
+	SLOT 2
+	EMOTE
+		SELF A huge ball of molten fire shoots from your $hs...
+		TARGET A huge ball of molten fire shoots from $s $hs...
+		OTHERS A huge ball of molten fire shoots from $s $hs...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 12
+		VAL 5 6
+		VAL 6 1
+		VAL 7 12
+		VAL 9 1
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with fire for $t damage!
+			TARGET You are hit with fire for $t damage!
+			OTHERS $N is hit with fire for $t damage!
+			SELFTARGET You are hit with fire for $t damage!
+		END
+		EMOTE
+			TYPE 1
+			SELF $N avoids being hit with fire!
+			TARGET You avoid being hit with fire!
+			OTHERS $N avoids being hit with fire!
+		END
+	END
+END
+
+ID 3
+	NAME Heal
+	COMMAND heal
+	COST 10
+	TARGET 2
+	KEYWORD 4101
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 1
+	SLOT 3
+	EFFECT
+		TYPE 3
+		VAL 0 100
+		VAL 1 4
+		VAL 2 12
+		VAL 5 6
+		VAL 6 1
+		VAL 7 12
+		EMOTE
+			SELF A soft white glow sinks into $N.
+			TARGET A soft white glow sinks into you.
+			OTHERS A soft white glow sinks into $N.
+			SELFTARGET A soft white glow sinks into you.
+		END
+		EMOTE
+			TYPE 2
+			SELF $N is not hurt.
+			SELFTARGET You are not hurt.
+		END
+	END
+END
+
+ID 4
+	NAME Lightning Bolt
+	COMMAND lightning bolt
+	TARGET 3
+	KEYWORD 37
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 1
+	EMOTE
+		SELF A bolt of lightning shoots from your $h...
+		TARGET A bolt of lightning shoots from $s $h...
+		OTHERS A bolt of lightning shoots from $s $h...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 12
+		VAL 5 6
+		VAL 6 1
+		VAL 7 12
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with lightning for $t damage!
+			TARGET You are hit with lightning for $t damage!
+			OTHERS $N is hit with lightning for $t damage!
+			SELFTARGET You are hit with lightning for $t damage!
+		END
+	END
+END
+
+ID 5
+	NAME Flurry of Blows
+	COMMAND flurry
+	TARGET 3
+	KEYWORD 2050
+	FLAG 65
+	TIER 2
+	SLOT 3
+	EMOTE
+		SELF You unleash a flurry of blows!
+		TARGET $n unleashes a flurry of blows!
+		OTHERS $n unleashes a flurry of blows!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 65
+		VAL 1 1
+		VAL 4 -34
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 65
+		VAL 1 1
+		VAL 4 -34
+	END
+END
+
+ID 6
+	NAME Pugilism
+	TYPE 1
+	TIER 1
+	SLOT 4
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 1
+		VAL 3 6
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+		COND
+			FUNC 1
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 3
+		VAL 3 2
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+		COND
+			FUNC 1
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 4
+		VAL 3 10
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+		COND
+			FUNC 1
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 5
+		VAL 3 5
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+		COND
+			FUNC 1
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 6
+		VAL 3 4
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+		COND
+			FUNC 1
+			VAL 1
+		END
+	END
+END
+
+ID 7
+	NAME Crane Stance
+	COMMAND cranestance
+	KEYWORD 1026
+	TIER 2
+	SLOT 2
+	EMOTE
+		SELFTARGET You enter the evasive stance of the crane.
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 7
+		VAL 3 5
+		COND
+			FUNC 1
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 8
+		VAL 3 5
+		COND
+			FUNC 1
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 4
+		VAL 3 10
+		COND
+			FUNC 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+END
+
+ID 8
+	NAME Boar Stance
+	COMMAND boarstance
+	KEYWORD 1026
+	TIER 3
+	SLOT 2
+	EMOTE
+		SELFTARGET You enter the aggressive stance of the boar.
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 4
+		VAL 3 10
+		COND
+			FUNC 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 1
+		VAL 3 2
+		COND
+			FUNC 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 6
+		VAL 3 1
+		COND
+			FUNC 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+END
+
+ID 9
+	NAME Defend
+	COMMAND defend
+	KEYWORD 1026
+	DELAY 35
+	FLOOR 20
+	EMOTE
+		OTHERS $n enters a defensive stance.
+		SELFTARGET You enter a defensive stance.
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 9
+		VAL 3 40
+		VAL 4 -2
+	END
+END
+
+ID 10
+	NAME Quicken
+	COMMAND quicken
+	TARGET 2
+	KEYWORD 5
+	MANA 45
+	MANASCALE 15
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	TIER 2
+	SLOT 3
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 1
+		VAL 2 60
+	END
+END
+
+ID 11
+	NAME Sloth
+	COMMAND sloth
+	TARGET 3
+	KEYWORD 5
+	MANA 45
+	MANASCALE 15
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	TIER 1
+	SLOT 3
+	EFFECT
+		TYPE 2
+		VAL 0 70
+		VAL 1 2
+		VAL 2 30
+		EMOTE
+			TYPE 1
+			SELF $N resists being slowed!
+			TARGET You resist being slowed!
+			OTHERS $N resists being slowed!
+			SELFTARGET You resist being slowed!
+		END
+	END
+END
+
+ID 12
+	NAME Shield Block
+	TYPE 2
+	TIER 2
+	SLOT 4
+END
+
+ID 13
+	NAME Parry
+	TYPE 2
+	TIER 4
+	SLOT 4
+END
+
+ID 14
+	NAME Dirt Throw
+	COMMAND dirtthrow
+	TYPE 5
+	TARGET 3
+	KEYWORD 258
+	DELAY 39
+	FLOOR 15
+	CD 15
+	EFFECT
+		TYPE 2
+		VAL 0 75
+		VAL 1 16
+		VAL 2 30
+		EMOTE
+			SELF You throw a $hful of dirt at $N.
+			TARGET $n throws a $hful of dirt at you.
+			OTHERS $n throws a $hful of dirt at $N.
+		END
+		EMOTE
+			TYPE 1
+			SELF You throw a $hful of dirt at $N, but miss.
+			TARGET $n throws a $hful of dirt at you, but misses.
+			OTHERS $n throws a $hful of dirt at $N, but misses.
+		END
+	END
+END
+
+ID 15
+	NAME Dodge
+	TYPE 2
+END
+
+ID 16
+	NAME Hide
+	COMMAND hide
+	KEYWORD 258
+	FLAG 16
+	DELAY 30
+	FLOOR 15
+	TIER 1
+	SLOT 3
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 3
+		VAL 2 -1
+		EMOTE
+			TYPE 2
+			SELFTARGET You are already hidden.
+		END
+	END
+END
+
+ID 17
+	NAME Arctic Blast
+	COMMAND arctic blast
+	TARGET 3
+	KEYWORD 21
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 1
+	SLOT 2
+	EMOTE
+		TYPE 1
+		SELF A sheet of ice, hail, and cold emanates from your $hs...
+		TARGET A sheet of ice, hail, and cold emanates from $s $hs...
+		OTHERS A sheet of ice, hail, and cold emanates from $s $hs...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 12
+		VAL 5 6
+		VAL 6 1
+		VAL 7 12
+		VAL 9 2
+		EMOTE
+			HEALTH 1
+			SELF $N is hit by an intense blast of freezing cold for $T damage.
+			TARGET You are hit by an intense blast of freezing cold for $T damage.
+			OTHERS $N is hit by an intense blast of freezing cold for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF The freezing cold evaporates before reaching $N.
+			TARGET The freezing cold evaporates before reaching you.
+			OTHERS The freezing cold evaporates before reaching $N.
+		END
+	END
+END
+
+ID 18
+	NAME Smite
+	COMMAND smite
+	TARGET 3
+	KEYWORD 32773
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 2
+	SLOT 3
+	EMOTE
+		TYPE 1
+		SELF A bright whip is hurled from your $h...
+		TARGET A bright whip is hurled from $s $h...
+		OTHERS A bright whip is hurled from $s $h...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 12
+		VAL 5 6
+		VAL 6 1
+		VAL 7 12
+		VAL 9 6
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with radiant energy for $T damage.
+			TARGET You are hit with radiant energy for $T damage.
+			OTHERS $N is hit with radiant energy for $T damage.
+			SELFTARGET You are hit with radiant energy for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF The whip vanishes before ever reaching $N.
+			TARGET The whip vanishes before ever reaching you.
+			OTHERS The whip vanishes before ever reaching $N.
+			SELFTARGET The whip vanishes before ever reaching you.
+		END
+	END
+END
+
+ID 19
+	NAME Shadowbolt
+	COMMAND shadowbolt
+	TARGET 3
+	KEYWORD 65541
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 1
+	SLOT 2
+	EMOTE
+		TYPE 1
+		SELF Shadowy tendrils expel from your $h...
+		TARGET Shadowy tendrils expel from $s $h...
+		OTHERS Shadowy tendrils expel from $s $h...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 12
+		VAL 5 6
+		VAL 6 1
+		VAL 7 12
+		VAL 9 5
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with dark forces for $T damage.
+			TARGET You are hit with dark forces for $T damage.
+			OTHERS $N is hit with dark forces for $T damage.
+			SELFTARGET You are hit with dark forces for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF The shadows abruptly end before reaching $N.
+			TARGET The shadows abruptly end before reaching you.
+			OTHERS The shadows abruptly end before reaching $N.
+			SELFTARGET The shadows abruptly end before reaching you.
+		END
+	END
+END
+
+ID 20
+	NAME Hydroblast
+	COMMAND hydroblast
+	TARGET 3
+	KEYWORD 69
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	SLOT 2
+	EMOTE
+		TYPE 1
+		SELF A torrent of water gushes from your $hs...
+		TARGET A torrent of water gushes from $s $hs...
+		OTHERS A torrent of water gushes from $s $hs...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 10
+		VAL 1 4
+		VAL 2 12
+		VAL 5 6
+		VAL 6 1
+		VAL 7 12
+		VAL 9 4
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with a force of water for $T damage.
+			TARGET You are hit with a force of water for $T damage.
+			OTHERS $N is hit with a force of water for $T damage.
+			SELFTARGET You are hit with a force of water for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF It evaporates before getting anywhere near $N.
+			TARGET It evaporates before getting anywhere near you.
+			OTHERS It evaporates before getting anywhere near $N.
+			SELFTARGET It evaporates before getting anywhere near you.
+		END
+	END
+END
+
+ID 21
+	NAME Arcane Bolt
+	COMMAND arcane bolt
+	TARGET 3
+	KEYWORD 5
+	MANA 120
+	MANASCALE 40
+	DELAY 35
+	FLOOR 15
+	CHARGE 20
+	TIER 4
+	SLOT 2
+	EMOTE
+		SELF A sphere of magical energy jolts from your $h...
+		TARGET A sphere of magical energy jolts from $s $h...
+		OTHERS A sphere of magical energy jolts from $s $h...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 16
+		VAL 5 8
+		VAL 6 1
+		VAL 7 12
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with arcane energy for $T damage.
+			TARGET You are hit with arcane energy for $T damage.
+			OTHERS $N is hit with arcane energy for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF $N avoids being hit with arcane energy.
+			TARGET You avoid being hit with arcane energy.
+			OTHERS $N avoids being hit with arcane energy.
+		END
+	END
+END
+
+ID 22
+	NAME Meteor Shower
+	COMMAND meteor shower
+	TARGET 8
+	KEYWORD 13
+	MANA 90
+	MANASCALE 30
+	DELAY 60
+	FLOOR 20
+	EMOTE
+		SELF Meteors fall from the sky in a blazing glory of chaos!
+		OTHERS Meteors fall from the sky in a blazing glory of chaos!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 8
+		VAL 5 4
+		VAL 6 1
+		VAL 7 8
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with fire for $t damage!
+			TARGET You are hit with fire for $t damage!
+			OTHERS $N is hit with fire for $t damage!
+			SELFTARGET You are hit with fire for $t damage!
+		END
+	END
+END
+
+ID 23
+	NAME Blizzard
+END
+
+ID 24
+	NAME Lightning Storm
+END
+
+ID 25
+	NAME Tsunami
+END
+
+ID 26
+	NAME Arcane Missiles
+	COMMAND arcane missiles
+	TARGET 3
+	KEYWORD 5
+	MANA 240
+	MANASCALE 80
+	DELAY 40
+	FLOOR 20
+	CHARGE 30
+	EMOTE
+		SELF Spheres of magical energy jolt from your $h...
+		TARGET Spheres of magical energy jolt from $s $h...
+		OTHERS Spheres of magical energy jolt from $s $h...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 16
+		VAL 5 8
+		VAL 6 1
+		VAL 7 12
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with arcane energy for $T damage.
+			TARGET You are hit with arcane energy for $T damage.
+			OTHERS $N is hit with arcane energy for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF $N avoids being hit with arcane energy.
+			TARGET You avoid being hit with arcane energy.
+			OTHERS $N avoids being hit with arcane energy.
+		END
+	END
+END
+
+ID 27
+	NAME Cinders
+	COMMAND cinders
+	TYPE 5
+	TARGET 3
+	KEYWORD 13
+	MANA 120
+	MANASCALE 40
+	DELAY 35
+	FLOOR 15
+	CHARGE 25
+	TIER 3
+	RANK 5
+	EMOTE
+		SELF Three bright hot flames expel from your $hs...
+		TARGET Three bright hot flames expel from $s $hs...
+		OTHERS Three bright hot flames expel from $s $hs...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 70
+		VAL 1 4
+		VAL 2 7
+		VAL 5 3
+		VAL 6 1
+		VAL 7 6
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with fire for $t damage!
+			TARGET You are hit with fire for $t damage!
+			OTHERS $N is hit with fire for $t damage!
+			SELFTARGET You are hit with fire for $t damage!
+		END
+		EMOTE
+			TYPE 1
+			SELF $N avoids being hit with fire!
+			TARGET You avoid being hit with fire!
+			OTHERS $N avoids being hit with fire!
+		END
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 70
+		VAL 1 4
+		VAL 2 7
+		VAL 5 3
+		VAL 6 1
+		VAL 7 6
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with fire for $t damage!
+			TARGET You are hit with fire for $t damage!
+			OTHERS $N is hit with fire for $t damage!
+			SELFTARGET You are hit with fire for $t damage!
+		END
+		EMOTE
+			TYPE 1
+			SELF $N avoids being hit with fire!
+			TARGET You avoid being hit with fire!
+			OTHERS $N avoids being hit with fire!
+		END
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 70
+		VAL 1 4
+		VAL 2 7
+		VAL 5 3
+		VAL 6 1
+		VAL 7 6
+		EMOTE
+			HEALTH 1
+			SELF $N is hit with fire for $t damage!
+			TARGET You are hit with fire for $t damage!
+			OTHERS $N is hit with fire for $t damage!
+			SELFTARGET You are hit with fire for $t damage!
+		END
+		EMOTE
+			TYPE 1
+			SELF $N avoids being hit with fire!
+			TARGET You avoid being hit with fire!
+			OTHERS $N avoids being hit with fire!
+		END
+	END
+	EFFECT
+		TYPE 13
+		RANK 2
+		VAL 1 22
+		VAL 4 5
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 3
+			VAL 1
+		END
+	END
+END
+
+ID 28
+	NAME Icicles
+END
+
+ID 29
+	NAME Chain Lightning
+END
+
+ID 30
+	NAME Rays of Yan
+END
+
+ID 31
+	NAME Dark Tendrils
+END
+
+ID 32
+	NAME Aqua Torrents
+END
+
+ID 33
+	NAME Tornado Kick
+	COMMAND tornadokick
+	TARGET 8
+	KEYWORD 2050
+	FLAG 1
+	DELAY 5
+	TIER 3
+	SLOT 2
+	EMOTE
+		OTHERS $n performs a powerful tornado kick!
+		SELFTARGET You perform a powerful tornado kick!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 -67
+		EMOTE
+			HEALTH 1
+			SELF $N is hit for $T damage.
+			TARGET You are hit for $T damage.
+			OTHERS $N is hit for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF $N avoids being hit!
+			TARGET You avoid being hit!
+			OTHERS $N avoids being hit!
+		END
+	END
+END
+
+ID 34
+	NAME Cleave
+	COMMAND cleave
+	TARGET 8
+	KEYWORD 2050
+	FLAG 32
+	MANA 105
+	MANASCALE 35
+	DELAY 10
+	TIER 3
+	SLOT 3
+	EMOTE
+		OTHERS $n swings $s weapon in a large arc!
+		SELFTARGET You swing your weapon in a large arc!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+END
+
+ID 35
+	NAME Lurk
+	COMMAND lurk
+	TARGET 2
+	KEYWORD 8197
+	MANA 114
+	MANASCALE 38
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	TIER 4
+	SLOT 3
+	EFFECT
+		TYPE 2
+		EMOTE
+			SELF Shadows envelop $N.
+			TARGET Shadows envelop you.
+			OTHERS Shadows envelop $N.
+			SELFTARGET Shadows envelop you.
+		END
+	END
+END
+
+ID 36
+	NAME Translocate
+END
+
+ID 37
+	NAME Blink
+END
+
+ID 38
+	NAME Arcane Strength
+	COMMAND arcane strength
+	TARGET 2
+	KEYWORD 5
+	MANA 45
+	MANASCALE 15
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 56
+		VAL 2 3600
+		VAL 5 1
+	END
+END
+
+ID 39
+	NAME Arcane Vitality
+	COMMAND arcane vitality
+	TARGET 2
+	KEYWORD 5
+	MANA 45
+	MANASCALE 15
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 57
+		VAL 2 3600
+		VAL 5 1
+	END
+END
+
+ID 40
+	NAME Arcane Speed
+	COMMAND arcane speed
+	TARGET 2
+	KEYWORD 5
+	MANA 45
+	MANASCALE 15
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 58
+		VAL 2 3600
+		VAL 5 1
+	END
+END
+
+ID 41
+	NAME Arcane Intellect
+	COMMAND arcane intellect
+	TARGET 2
+	KEYWORD 5
+	MANA 45
+	MANASCALE 15
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 59
+		VAL 2 3600
+		VAL 5 1
+	END
+END
+
+ID 42
+	NAME Arcane Spirit
+	COMMAND arcane spirit
+	TARGET 2
+	KEYWORD 5
+	MANA 45
+	MANASCALE 15
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 60
+		VAL 2 3600
+		VAL 5 1
+	END
+END
+
+ID 43
+	NAME Wisdom
+END
+
+ID 44
+	NAME Healing Rains
+END
+
+ID 45
+	NAME Steal Magic
+END
+
+ID 46
+	NAME Mirror Image
+END
+
+ID 47
+	NAME Teleport
+	COMMAND teleport
+	KEYWORD 5
+	MANA 120
+	MANASCALE 40
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EFFECT
+		TYPE 6
+		VAL 0 100
+		VAL 1 1
+		EMOTE
+			OTHERS $n disappears!
+			SELFTARGET ^YYou feel yourself being whisked through time and space...^n\r\n^YWhen you regain your senses you find yourself -^n\r\n
+		END
+	END
+END
+
+ID 48
+	NAME Portal
+END
+
+ID 49
+	NAME Cleanse
+END
+
+ID 50
+	NAME Earthquake
+	KEYWORD 133
+END
+
+ID 51
+	NAME Fear
+	KEYWORD 5
+END
+
+ID 52
+	NAME Raise Dead
+END
+
+ID 53
+	NAME Syphon Soul
+END
+
+ID 54
+	NAME Hex
+	COMMAND hex
+	TARGET 3
+	KEYWORD 517
+	MANA 48
+	MANASCALE 16
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	TIER 2
+	SLOT 3
+END
+
+ID 55
+	NAME Ancient Plague
+END
+
+ID 56
+	NAME Ride Lightning
+END
+
+ID 57
+	NAME Elemental Steed
+END
+
+ID 58
+	NAME Fire Elemental
+	COMMAND fire elemental
+	TYPE 5
+	KEYWORD 5
+	MANA 75
+	MANASCALE 25
+	DELAY 40
+	FLOOR 15
+	TIER 4
+	RANK 5
+	EFFECT
+		TYPE 15
+		VAL 1 51
+		VAL 2 9
+	END
+END
+
+ID 59
+	NAME Summon Frost Elemental
+END
+
+ID 60
+	NAME Summon Lightning Elemental
+	COMMAND summon lightning elemental
+	TYPE 5
+	KEYWORD 5
+	TIER 3
+	RANK 5
+END
+
+ID 61
+	NAME Void Prison
+END
+
+ID 62
+	NAME Blinding Light
+END
+
+ID 63
+	NAME Cure
+END
+
+ID 64
+	NAME True Sight
+END
+
+ID 65
+	NAME Sanctuary
+END
+
+ID 66
+	NAME Soul Summon
+	COMMAND soul summon
+	TARGET 11
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CHARGE 30
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 18
+		VAL 4 60
+		EMOTE
+			SELF You attempt to summon $N...
+			TARGET $n is offering a ^MSoul Summon^n to you.\r\nUse the Accept command to be summoned.
+		END
+	END
+END
+
+ID 67
+	NAME Resurrection
+	COMMAND resurrection
+	TARGET 2
+	KEYWORD 5
+	FLAG 4
+	MANA 90
+	MANASCALE 30
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 3
+	SLOT 3
+	EFFECT
+		TYPE 8
+		VAL 0 100
+		VAL 1 25
+		EMOTE
+			SELF $N is bathed in white light and comes back to life!
+			TARGET You are bathed in white light and comes back to life!
+			OTHERS $N is bathed in white light and comes back to life!
+		END
+		EMOTE
+			TYPE 2
+			SELF $N is not dead.
+		END
+	END
+END
+
+ID 68
+	NAME Transmogrify
+END
+
+ID 69
+	NAME Muddle
+END
+
+ID 70
+	NAME Gills
+END
+
+ID 71
+	NAME Dispel Magic
+END
+
+ID 72
+	NAME Sleep
+	COMMAND sleep
+	TARGET 3
+	KEYWORD 261
+	MANA 48
+	MANASCALE 16
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EMOTE
+		TYPE 1
+		SELF Bright, colorful poppies slowly fall in front of $N...
+		TARGET Bright, colorful poppies slowly fall in front of you...
+		OTHERS Bright, colorful poppies slowly fall in front of $N...
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 70
+		VAL 1 34
+		VAL 2 30
+		VAL 4 1
+	END
+END
+
+ID 73
+	NAME Mana Shield
+END
+
+ID 74
+	NAME Fire Ward
+	COMMAND fire ward
+	TYPE 5
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CD 60
+	TIER 2
+	RANK 5
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 16
+		VAL 2 2
+		VAL 3 -1
+		VAL 4 60
+		VAL 5 4
+		VAL 6 8
+		VAL 7 1
+		VAL 8 8
+		VAL 9 4
+		EMOTE
+			SELF A flaming shield appears in front of $N.
+			TARGET A flaming shield appears in front of you.
+			OTHERS A flaming shield appears in front of $N.
+			SELFTARGET A flaming shield appears in front of you.
+		END
+		EMOTE
+			TYPE 3
+			OTHERS The flaming shield in front of $n disappears.
+			SELFTARGET The flaming shield in front of you disappears.
+		END
+		EMOTE
+			TYPE 4
+			SELF The fire ward shielding $N absorbs $T damage.
+			TARGET Your fire ward absorbs $T damage. $t
+			OTHERS The fire ward shielding $N absorbs $T damage.
+		END
+	END
+END
+
+ID 75
+	NAME Ice Ward
+	COMMAND ice ward
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CD 60
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 16
+		VAL 2 4
+		VAL 3 -1
+		VAL 4 60
+		VAL 5 4
+		VAL 6 8
+		VAL 7 1
+		VAL 8 8
+		VAL 9 4
+		EMOTE
+			SELF A frost shield appears in front of $N.
+			TARGET A frost shield appears in front of you.
+			OTHERS A frost shield appears in front of $N.
+			SELFTARGET A frost shield appears in front of you.
+		END
+		EMOTE
+			TYPE 3
+			OTHERS The frost shield in front of $n disappears.
+			SELFTARGET The frost shield in front of you disappears.
+		END
+		EMOTE
+			TYPE 4
+			SELF The frost ward shielding $N absorbs $T damage.
+			TARGET Your frost ward absorbs $T damage. $t
+			OTHERS The frost ward shielding $N absorbs $T damage.
+		END
+	END
+END
+
+ID 76
+	NAME Lightning Ward
+	COMMAND lightning ward
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CD 60
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 16
+		VAL 2 8
+		VAL 3 -1
+		VAL 4 60
+		VAL 5 4
+		VAL 6 8
+		VAL 7 1
+		VAL 8 8
+		VAL 9 4
+		EMOTE
+			SELF A lightning shield appears in front of $N.
+			TARGET A lightning shield appears in front of you.
+			OTHERS A lightning shield appears in front of $N.
+			SELFTARGET A lightning shield appears in front of you.
+		END
+		EMOTE
+			TYPE 3
+			OTHERS The lightning shield in front of $n disappears.
+			SELFTARGET The lightning shield in front of you disappears.
+		END
+		EMOTE
+			TYPE 4
+			SELF The lightning ward shielding $N absorbs $T damage.
+			TARGET Your lightning ward absorbs $T damage. $t
+			OTHERS The lightning ward shielding $N absorbs $T damage.
+		END
+	END
+END
+
+ID 77
+	NAME Water Ward
+	COMMAND water ward
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CD 60
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 16
+		VAL 2 16
+		VAL 3 -1
+		VAL 4 60
+		VAL 5 4
+		VAL 6 8
+		VAL 7 1
+		VAL 8 8
+		VAL 9 4
+		EMOTE
+			SELF A water shield appears in front of $N.
+			TARGET A water shield appears in front of you.
+			OTHERS A water shield appears in front of $N.
+			SELFTARGET A water shield appears in front of you.
+		END
+		EMOTE
+			TYPE 3
+			OTHERS The water shield in front of $n disappears.
+			SELFTARGET The water shield in front of you disappears.
+		END
+		EMOTE
+			TYPE 4
+			SELF The water ward shielding $N absorbs $T damage.
+			TARGET Your water ward absorbs $T damage. $t
+			OTHERS The water ward shielding $N absorbs $T damage.
+		END
+	END
+END
+
+ID 78
+	NAME Radiant Ward
+	COMMAND radiant ward
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CD 60
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 16
+		VAL 2 64
+		VAL 3 -1
+		VAL 4 60
+		VAL 5 4
+		VAL 6 8
+		VAL 7 1
+		VAL 8 8
+		VAL 9 4
+		EMOTE
+			SELF A radiant shield appears in front of $N.
+			TARGET A radiant shield appears in front of you.
+			OTHERS A radiant shield appears in front of $N.
+			SELFTARGET A radiant shield appears in front of you.
+		END
+		EMOTE
+			TYPE 3
+			OTHERS The radiant shield in front of $n disappears.
+			SELFTARGET The radiant shield in front of you disappears.
+		END
+		EMOTE
+			TYPE 4
+			SELF The radiant ward shielding $N absorbs $T damage.
+			TARGET Your radiant ward absorbs $T damage. $t
+			OTHERS The radiant ward shielding $N absorbs $T damage.
+		END
+	END
+END
+
+ID 79
+	NAME Shadow Ward
+	COMMAND shadow ward
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CD 60
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 16
+		VAL 2 32
+		VAL 3 -1
+		VAL 4 60
+		VAL 5 4
+		VAL 6 8
+		VAL 7 1
+		VAL 8 8
+		VAL 9 4
+		EMOTE
+			SELF A shadow shield appears in front of $N.
+			TARGET A shadow shield appears in front of you.
+			OTHERS A shadow shield appears in front of $N.
+			SELFTARGET A shadow shield appears in front of you.
+		END
+		EMOTE
+			TYPE 3
+			OTHERS The shadow shield in front of $n disappears.
+			SELFTARGET The shadow shield in front of you disappears.
+		END
+		EMOTE
+			TYPE 4
+			SELF The shadow ward shielding $N absorbs $T damage.
+			TARGET Your shadow ward absorbs $T damage. $t
+			OTHERS The shadow ward shielding $N absorbs $T damage.
+		END
+	END
+END
+
+ID 80
+	NAME Prismatic Ward
+	COMMAND prismatic ward
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CD 60
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 16
+		VAL 2 254
+		VAL 3 -1
+		VAL 4 60
+		VAL 5 4
+		VAL 6 8
+		VAL 7 1
+		VAL 8 8
+		VAL 9 4
+		EMOTE
+			SELF A prismatic shield appears in front of $N.
+			TARGET A prismatic shield appears in front of you.
+			OTHERS A prismatic shield appears in front of $N.
+			SELFTARGET A prismatic shield appears in front of you.
+		END
+		EMOTE
+			TYPE 3
+			OTHERS The prismatic shield in front of $n disappears.
+			SELFTARGET The prismatic shield in front of you disappears.
+		END
+		EMOTE
+			TYPE 4
+			SELF The prismatic ward shielding $N absorbs $T damage.
+			TARGET Your prismatic ward absorbs $T damage. $t
+			OTHERS The prismatic ward shielding $N absorbs $T damage.
+		END
+	END
+END
+
+ID 81
+	NAME Conjure Food
+END
+
+ID 82
+	NAME Fireflies
+END
+
+ID 83
+	NAME Unlock
+END
+
+ID 84
+	NAME Silence
+	COMMAND silence
+	TARGET 3
+	KEYWORD 261
+	MANA 48
+	MANASCALE 16
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	EFFECT
+		TYPE 2
+		VAL 0 65
+		VAL 1 10
+		VAL 2 20
+		VAL 4 1
+	END
+END
+
+ID 85
+	NAME Calm
+END
+
+ID 86
+	NAME Invisibility
+END
+
+ID 87
+	NAME Recall
+	COMMAND recall
+	TYPE 3
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	EFFECT
+		TYPE 6
+		VAL 0 100
+		VAL 1 2
+		EMOTE
+			OTHERS $n disappears!
+			SELFTARGET ^YYou feel yourself being whisked through time and space...^n\r\n^YWhen you regain your senses you find yourself -^n\r\n
+		END
+	END
+END
+
+ID 88
+	NAME Guild Recall
+	COMMAND guild recall
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	EFFECT
+		TYPE 6
+		VAL 0 100
+		VAL 1 5
+		EMOTE
+			OTHERS $n disappears!
+			SELFTARGET ^YYou feel yourself being whisked through time and space...^n\r\n^YWhen you regain your senses you find yourself -^n\r\n
+		END
+	END
+END
+
+ID 89
+	NAME Backstab
+END
+
+ID 90
+	NAME Assassinate
+END
+
+ID 91
+	NAME Quickstrike
+	COMMAND quickstrike
+	TARGET 3
+	KEYWORD 2050
+	MANA 60
+	MANASCALE 20
+	DELAY -10
+	FLOOR -5
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+END
+
+ID 92
+	NAME Aim
+	COMMAND aim
+	TARGET 3
+	KEYWORD 2050
+	FLAG 2
+	CHARGE 7
+	TIER 1
+	SLOT 3
+	EMOTE
+		SELF You aim your $P at $N...
+		TARGET $n aims $s $P at you...
+		OTHERS $n aims $s $P at $N...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 90
+		VAL 1 1
+		VAL 6 1
+	END
+END
+
+ID 93
+	NAME Meditate
+	COMMAND meditate
+	TYPE 3
+	KEYWORD 2
+	DELAY 30
+	FLOOR 15
+	EFFECT
+		TYPE 4
+		VAL 0 100
+		VAL 1 4
+		VAL 2 6
+		VAL 5 3
+		VAL 6 1
+		VAL 7 8
+		EMOTE
+			OTHERS $n meditates...
+			SELFTARGET You meditate...
+		END
+		EMOTE
+			TYPE 2
+			SELFTARGET You are at full mana.
+		END
+	END
+END
+
+ID 94
+	NAME Lunge
+	COMMAND lunge
+	TARGET 3
+	KEYWORD 2050
+	FLAG 32
+	TIER 1
+	SLOT 3
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 25
+		EMOTE
+			HEALTH 1
+			SELF You lunge with your $P at $N and connect for $T damage.
+			TARGET $n lunges with $s $P at you and connects for $T damage.
+			OTHERS $n lunges with $s $P at $N and connects for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF You lunge with your $P at $N, but miss.
+			TARGET $n lunges with $s $P at you, but misses.
+			OTHERS $n lunges with $s $P at $N, but misses.
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 35
+		VAL 3 25
+		VAL 4 -1
+	END
+END
+
+ID 95
+	NAME Leap Attack
+	COMMAND leapattack
+	TARGET 3
+	KEYWORD 2050
+	FLAG 32
+	EMOTE
+		SELF You perform a powerful leap towards $N.
+		TARGET $n performs a powerful leap towards you.
+		OTHERS $n performs a powerful leap towards $N.
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 40
+		VAL 1 1
+		VAL 4 100
+	END
+END
+
+ID 96
+	NAME Precise Strike
+	COMMAND precisestrike
+	TARGET 3
+	KEYWORD 2050
+	FLAG 32
+	EFFECT
+		TYPE 1
+		VAL 0 140
+		VAL 1 1
+		VAL 4 -25
+	END
+END
+
+ID 97
+	NAME Blindside
+	COMMAND blindside
+	TARGET 3
+	KEYWORD 2050
+	FLAG 32
+	DELAY 7
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 19
+		VAL 3 25
+		VAL 4 -1
+	END
+END
+
+ID 98
+	NAME Thrust
+	COMMAND thrust
+	TARGET 3
+	KEYWORD 2050
+	FLAG 32
+	MANA 30
+	MANASCALE 10
+	EFFECT
+		TYPE 7
+		TARGET 1
+		VAL 0 100
+		VAL 1 20
+		VAL 3 10
+		VAL 4 1
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+END
+
+ID 99
+	NAME Power Attack
+	COMMAND powerattack
+	TARGET 3
+	KEYWORD 2050
+	FLAG 32
+	MANA 60
+	MANASCALE 20
+	DELAY 5
+	SLOT 3
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 50
+	END
+END
+
+ID 100
+	NAME Sunder
+	COMMAND sunder
+	TARGET 3
+	KEYWORD 258
+	DELAY 43
+	FLOOR 18
+	EFFECT
+		TYPE 2
+		VAL 0 70
+		VAL 1 24
+		VAL 2 30
+		EMOTE
+			SELF You unleash a powerful strike against $N, rendering $S defenses useless!
+			TARGET $n unleashes a powerful strike against you, rendering your defenses useless!
+			OTHERS $n unleashes a powerful strike against $N, rendering $S defenses useless!
+		END
+		EMOTE
+			TYPE 1
+			SELF You attempt to sunder $N with a powerful strike, but $S defenses hold.
+			TARGET $n attempts to sunder you with a powerful strike, but your defenses hold.
+			OTHERS $n attempts to sunder $N with a powerful strike, but $S defenses hold.
+		END
+	END
+END
+
+ID 101
+	NAME Disarm
+	COMMAND disarm
+	TARGET 3
+	KEYWORD 2
+	FLAG 32
+	DELAY 43
+	FLOOR 18
+	EFFECT
+		TYPE 2
+		VAL 0 70
+		VAL 1 19
+		VAL 2 30
+		EMOTE
+			SELF You strike out at $N with a flourish, reducing $S ability to attack.
+			TARGET $n strikes out at you with a flourish, reducing your ability to attack.
+			OTHERS $n strikes out at $N with a flourish, reducing $S ability to attack.
+		END
+		EMOTE
+			TYPE 1
+			SELF You strike out at $N with a flourish, but $e remains determined to fight at full strength.
+			TARGET $n strikes out at you with a flourish, but you remain determined to fight at full strength.
+			OTHERS $n strikes out at $N with a flourish, but $e remains determined to fight at full strength.
+		END
+	END
+END
+
+ID 102
+	NAME Stun
+	COMMAND stun
+	TARGET 3
+	KEYWORD 2
+	FLAG 32
+	DELAY 50
+	FLOOR 30
+	EMOTE
+		SELF You attempt to stun $N.
+		TARGET $n attempts to stun you.
+		OTHERS $n attempts to stun $N.
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 60
+		VAL 1 11
+		VAL 2 4
+		VAL 4 1
+	END
+END
+
+ID 103
+	NAME Hamstring
+	COMMAND hamstring
+	TARGET 3
+	KEYWORD 258
+	FLAG 32
+	MANA 24
+	MANASCALE 8
+	DELAY 5
+	TIER 3
+	SLOT 3
+	EFFECT
+		TYPE 2
+		VAL 0 65
+		VAL 1 2
+		VAL 2 30
+	END
+	EFFECT
+	END
+END
+
+ID 104
+	NAME Shield Break
+	COMMAND shieldbreak
+	TARGET 3
+	KEYWORD 2306
+	FLAG 32
+	MANA 24
+	MANASCALE 8
+	DELAY 5
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 50
+		VAL 1 31
+		VAL 2 30
+	END
+END
+
+ID 105
+	NAME Bloodstrike
+	COMMAND bloodstrike
+	TARGET 3
+	KEYWORD 2
+	FLAG 32
+	MANA 105
+	MANASCALE 35
+	DELAY 60
+	FLOOR 20
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		EMOTE
+			HEALTH 1
+			SELF You hurt $N for $T damage.
+			TARGET $n hurts you for $T damage.
+			OTHERS $n hurts $N for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF You try to hurt $N, but fail.
+			TARGET $n tries to hurt you, but fails.
+			OTHERS $n tries to hurt $N, but fails.
+		END
+	END
+END
+
+ID 106
+	NAME Execute
+	COMMAND execute
+	TARGET 3
+	KEYWORD 2
+	FLAG 64
+	DELAY 50
+	FLOOR 15
+	EFFECT
+		TYPE 9
+		VAL 0 60
+		COND
+			TARGET 1
+			FUNC 10
+			COMP 2
+			VAL 25
+		END
+		EMOTE
+			SELF You execute $N.
+			TARGET $n executes you.
+			OTHERS $n executes $N.
+		END
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 255
+		VAL 1 1
+		VAL 2 6
+		VAL 5 3
+		VAL 6 1
+		VAL 7 8
+		EMOTE
+			HEALTH 1
+			SELF You hurt $N for $T damage.
+			TARGET $n hurts you for $T damage.
+			OTHERS $n hurts $N for $T damage.
+		END
+	END
+END
+
+ID 107
+	NAME Battle Cry
+	COMMAND battlecry
+	KEYWORD 8194
+	DELAY 30
+	FLOOR 10
+	TIER 2
+	RANK 5
+	SLOT 3
+	EMOTE
+		OTHERS $n lets out a powerful battle cry!
+		SELFTARGET You let out a powerful battle cry!
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 18
+		VAL 2 60
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 23
+		VAL 2 60
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 24
+		VAL 2 60
+	END
+END
+
+ID 108
+	NAME Recover
+	COMMAND recover
+	TYPE 3
+	KEYWORD 4098
+	MANA 30
+	MANASCALE 10
+	DELAY 30
+	FLOOR 15
+	EMOTE
+		OTHERS $n patches $mself up.
+		SELFTARGET You patch yourself up.
+	END
+	EFFECT
+		TYPE 3
+		VAL 0 100
+		VAL 1 2
+		VAL 2 4
+		VAL 5 2
+		VAL 6 1
+		VAL 7 8
+		EMOTE
+			TYPE 2
+			SELFTARGET You are not hurt.
+		END
+	END
+	EFFECT
+		TYPE 10
+		TARGET 1
+	END
+END
+
+ID 109
+	NAME Wish
+	COMMAND wish
+	TARGET 2
+	KEYWORD 4098
+	FLAG 4
+	DELAY 40
+	FLOOR 15
+	EFFECT
+		TYPE 11
+		VAL 0 100
+		VAL 1 20
+		VAL 2 2
+	END
+END
+
+ID 110
+	NAME Dragon Shout
+	COMMAND dragonshout
+	TARGET 8
+	KEYWORD 2
+	MANA 120
+	MANASCALE 40
+	DELAY 40
+	FLOOR 15
+	EMOTE
+		OTHERS $n lets out a powerful shout of dragonic proportions!
+		SELFTARGET You let out a powerful shout of dragonic proportions!
+	END
+	EFFECT
+		TYPE 10
+		VAL 0 50
+		EMOTE
+			TYPE 1
+			SELF $N resists.
+			TARGET You resist.
+			OTHERS $N resists.
+		END
+	END
+END
+
+ID 111
+	NAME Rapid Fire
+	COMMAND rapidfire
+	TARGET 6
+	KEYWORD 2050
+	FLAG 66
+	CHARGE 21
+	TIER 2
+	SLOT 3
+	EMOTE
+		SELF You prepare to rapidly fire your $P...
+		OTHERS $n prepares to rapidly fire $s $P...
+	END
+	EMOTE
+		TYPE 1
+		SELF You rapidly unleash a series of shots!
+		TARGET $n rapidly unleashes a series of shots!
+		OTHERS $n rapidly unleashes a series of shots!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 -50
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 -50
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 -50
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 -50
+	END
+END
+
+ID 112
+	NAME Volley
+	COMMAND volley
+	TARGET 8
+	KEYWORD 2050
+	FLAG 2
+	CHARGE 35
+	TIER 4
+	SLOT 3
+	EMOTE
+		OTHERS $n sets up a volley for $s foes.
+		SELFTARGET You setup a volley for your foes.
+	END
+	EMOTE
+		TYPE 1
+		TARGET $n unleashes a volley into the air!
+		OTHERS $n unleashes a volley into the air!
+		SELFTARGET You unleash a volley into the air!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		EMOTE
+			HEALTH 1
+			SELF An arrow strikes $N for $T damage.
+			TARGET An arrow strikes you for $T damage.
+			OTHERS An arrow strikes $N for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF An arrow misses $N.
+			TARGET An arrow misses you.
+			OTHERS An arrow misses $N.
+		END
+	END
+END
+
+ID 113
+	NAME Pinning Shot
+	COMMAND pinshot
+	TARGET 3
+	KEYWORD 2050
+	FLAG 2
+	CHARGE 10
+	EMOTE
+		SELF You aim your $P at $N...
+		TARGET $n aims $s $P at you...
+		OTHERS $n aims $s $P at $N...
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 50
+		VAL 1 22
+		VAL 2 30
+	END
+END
+
+ID 114
+	NAME Quickshot
+	COMMAND quickshot
+	TARGET 3
+	KEYWORD 2050
+	FLAG 2
+	MANA 60
+	MANASCALE 20
+	DELAY -10
+	FLOOR -5
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+	END
+END
+
+ID 115
+	NAME Magic Eye
+	COMMAND magic eye
+	TARGET 2
+	KEYWORD 8197
+	MANA 75
+	MANASCALE 25
+	DELAY 25
+	FLOOR 10
+	CHARGE 15
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 37
+		VAL 2 60
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 23
+		VAL 2 60
+	END
+END
+
+ID 116
+	NAME Enchanted Shot
+	COMMAND enchantedshot
+	TARGET 3
+	KEYWORD 2051
+	FLAG 2
+	DELAY -10
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 4
+	END
+END
+
+ID 117
+	NAME Dual Wield
+	TYPE 1
+	TIER 5
+	SLOT 8
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 4
+		VAL 3 10
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+		COND
+			FUNC 9
+			VAL 1
+		END
+	END
+END
+
+ID 118
+	NAME Scavenging
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		RANK 1
+		VAL 1 24
+		VAL 2 118
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 119
+	NAME Apprentice Scavenging
+	TYPE 5
+	KEYWORD 262144
+	FLAG 128
+	TIER 2
+	RANK 1
+	EFFECT
+		TYPE 14
+		RANK 1
+		VAL 1 118
+		VAL 3 20
+	END
+END
+
+ID 120
+	NAME Journeyman Scavenging
+	TYPE 5
+	KEYWORD 262144
+	FLAG 128
+	TIER 3
+	RANK 1
+	EFFECT
+		TYPE 14
+		VAL 1 118
+		VAL 3 20
+	END
+END
+
+ID 121
+	NAME Expert Scavenging
+	TYPE 5
+	KEYWORD 262144
+	FLAG 128
+	TIER 4
+	RANK 1
+	EFFECT
+		TYPE 14
+		VAL 1 118
+		VAL 3 20
+	END
+END
+
+ID 122
+	NAME Artisan Scavenging
+	TYPE 5
+	KEYWORD 262144
+	FLAG 128
+	TIER 5
+	RANK 1
+	EFFECT
+		TYPE 14
+		VAL 1 118
+		VAL 3 20
+	END
+END
+
+ID 123
+	NAME Master Scavenging
+	TYPE 5
+	KEYWORD 262144
+	FLAG 128
+	TIER 6
+	RANK 1
+	EFFECT
+		TYPE 14
+		VAL 1 118
+		VAL 3 20
+	END
+END
+
+ID 124
+	NAME Grandmaster Scavenging
+	TYPE 5
+	KEYWORD 262144
+	FLAG 128
+	TIER 7
+	RANK 1
+	EFFECT
+		TYPE 14
+		RANK 1
+		VAL 1 118
+		VAL 3 20
+	END
+END
+
+ID 125
+	NAME Human Abilities
+	TYPE 3
+	FLAG 192
+	EFFECT
+		TYPE 12
+		VAL 1 87
+	END
+	EFFECT
+		TYPE 7
+		VAL 1 26
+		VAL 3 10
+	END
+	EFFECT
+		TYPE 7
+		VAL 1 27
+		VAL 3 10
+	END
+END
+
+ID 126
+	NAME Dwarf Abilities
+	TYPE 3
+	FLAG 192
+	EFFECT
+		TYPE 7
+		VAL 1 34
+		VAL 2 -1
+		VAL 3 10
+	END
+END
+
+ID 127
+	NAME Elf Abilities
+	TYPE 3
+	FLAG 192
+	EFFECT
+		TYPE 12
+		VAL 1 93
+	END
+END
+
+ID 128
+	NAME Half-Elf Abilities
+	TYPE 3
+	FLAG 192
+END
+
+ID 129
+	NAME Fae Abilities
+	TYPE 3
+	FLAG 192
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 7
+		VAL 3 25
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 1
+			VAL 1
+		END
+		COND
+			TARGET 2
+			FUNC 5
+		END
+	END
+END
+
+ID 130
+	NAME Goblin Abilities
+	TYPE 3
+	FLAG 192
+	EFFECT
+		TYPE 7
+		VAL 1 34
+		VAL 2 2
+		VAL 3 100
+	END
+	EFFECT
+		TYPE 7
+		VAL 1 34
+		VAL 2 22
+		VAL 3 100
+	END
+END
+
+ID 131
+	NAME Gnome Abilities
+	TYPE 3
+	FLAG 192
+END
+
+ID 132
+	NAME Half-Orc Abilities
+	TYPE 3
+	FLAG 192
+	EFFECT
+		TYPE 7
+		VAL 1 28
+		VAL 3 50
+	END
+	EFFECT
+		TYPE 7
+		VAL 1 32
+		VAL 3 10
+	END
+END
+
+ID 133
+	NAME Half-Ogre Abilities
+	TYPE 3
+	FLAG 192
+	EFFECT
+		TYPE 12
+		VAL 1 108
+	END
+END
+
+ID 134
+	NAME Blacksmithing
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 100
+END
+
+ID 135
+	NAME Fishing
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 100
+END
+
+ID 136
+	NAME Shield Bash
+	COMMAND bash
+	TYPE 5
+	TARGET 3
+	KEYWORD 2
+	FLAG 256
+	DELAY 40
+	FLOOR 20
+	TIER 1
+	RANK 5
+	EFFECT
+		TYPE 1
+		VAL 0 90
+		VAL 1 1
+		VAL 2 4
+		VAL 5 2
+		VAL 6 1
+		VAL 7 6
+		EMOTE
+			HEALTH 1
+			SELF You bash $N with your $P, inflicting $T damage.
+			TARGET $n bashes you for $T damage.
+			OTHERS $n bashes $N for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF You attempt to bash $N with your shield, but miss.
+			TARGET $n tried to bash you, but misses.
+			OTHERS $n tries to bash $N, but misses.
+		END
+	END
+	EFFECT
+		TYPE 2
+		VAL 0 50
+		VAL 1 12
+		VAL 2 120
+	END
+	EFFECT
+		TYPE 13
+		RANK 2
+		VAL 1 21
+		VAL 4 5
+		COND
+			TARGET 3
+			FUNC 13
+			ARG 136
+			VAL 1
+		END
+	END
+END
+
+ID 137
+	NAME Juggernaut Grip
+	TYPE 5
+	TIER 1
+	RANK 5
+END
+
+ID 138
+	NAME Monkey Grip
+	TYPE 5
+	TIER 1
+	RANK 5
+END
+
+ID 139
+	NAME Foraging
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		RANK 1
+		VAL 1 24
+		VAL 2 139
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 140
+	NAME Mining
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		VAL 1 24
+		VAL 2 140
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 141
+	NAME Lockpicking
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		RANK 1
+		VAL 1 24
+		VAL 2 141
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 142
+	NAME Skinning
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		RANK 1
+		VAL 1 24
+		VAL 2 142
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 143
+	NAME Woodcutting
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		VAL 1 24
+		VAL 2 143
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 144
+	NAME Pickpocketing
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		VAL 1 24
+		VAL 2 144
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 145
+	NAME Forestry
+	TYPE 5
+	KEYWORD 262144
+	TIER 1
+	RANK 20
+	EFFECT
+		TYPE 13
+		RANK 1
+		VAL 1 24
+		VAL 2 145
+		VAL 3 1
+		VAL 4 1
+	END
+END
+
+ID 146
+	NAME Arcane Wisdom
+	TYPE 5
+	TIER 2
+	RANK 1
+	GUILD 1
+	EFFECT
+		TYPE 12
+		RANK 1
+		VAL 1 38
+	END
+	EFFECT
+		TYPE 12
+		RANK 1
+		VAL 1 39
+	END
+	EFFECT
+		TYPE 12
+		RANK 1
+		VAL 1 40
+	END
+	EFFECT
+		TYPE 12
+		RANK 1
+		VAL 1 41
+	END
+	EFFECT
+		TYPE 12
+		RANK 1
+		VAL 1 42
+	END
+END
+
+ID 147
+	NAME Chronomancy
+	TYPE 5
+	TIER 3
+	RANK 5
+	GUILD 1
+	EFFECT
+		TYPE 13
+		RANK 1
+		VAL 0 100
+		VAL 1 29
+		VAL 3 10
+		VAL 4 10
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 0
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 12
+		RANK 1
+		VAL 1 11
+	END
+	EFFECT
+		TYPE 12
+		RANK 3
+		VAL 1 10
+	END
+	EFFECT
+		TYPE 12
+		RANK 5
+		VAL 1 148
+	END
+END
+
+ID 148
+	NAME Time Stop
+	KEYWORD 261
+	MANA 120
+	MANASCALE 40
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+END
+
+ID 149
+	NAME Retreat
+	COMMAND retreat
+	KEYWORD 2
+	DELAY 40
+	FLOOR 20
+	CHARGE 10
+	EMOTE
+		OTHERS $n begins to retreat...
+		SELFTARGET You begin to retreat...
+	END
+END
+
+ID 150
+	NAME Flamestrike
+	COMMAND flamestrike
+	TYPE 5
+	TARGET 3
+	KEYWORD 2058
+	MANA 51
+	MANASCALE 17
+	TIER 1
+	RANK 5
+	EMOTE
+		SELF You power your attack with flames!
+		TARGET $n powers $s attack with flames!
+		OTHERS $n powers $s attack with flames!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 10
+		VAL 9 1
+	END
+	EFFECT
+		TYPE 13
+		RANK 2
+		VAL 1 22
+		VAL 4 5
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 3
+			VAL 1
+		END
+	END
+END
+
+ID 151
+	NAME Berserker Stance
+	COMMAND berserkstance
+	KEYWORD 1026
+	DELAY 30
+	FLOOR 15
+	SLOT 3
+	EMOTE
+		OTHERS $n enters into the berserker stance.
+		SELFTARGET You enter into the berserker stance.
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 19
+		VAL 3 25
+	END
+	EFFECT
+		TYPE 7
+		TARGET 1
+		VAL 0 100
+		VAL 1 19
+		VAL 3 25
+	END
+END
+
+ID 152
+	NAME Drain Magic
+	COMMAND drain magic
+	TARGET 3
+	KEYWORD 5
+	MANA 60
+	MANASCALE 20
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 3
+	SLOT 3
+END
+
+ID 153
+	NAME Thousand Cuts
+	COMMAND thousand cuts
+	TARGET 3
+	KEYWORD 261
+	MANA 48
+	MANASCALE 16
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	TIER 1
+	SLOT 3
+END
+
+ID 154
+	NAME Soul Crush
+	COMMAND soul crush
+	TARGET 3
+	KEYWORD 517
+	MANA 150
+	MANASCALE 50
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 5
+END
+
+ID 155
+	NAME Drain Life
+	COMMAND drain life
+	KEYWORD 5
+	MANA 90
+	MANASCALE 30
+	DELAY 35
+	FLOOR 15
+	CHARGE 15
+	TIER 4
+	SLOT 3
+END
+
+ID 156
+	NAME Bloodcast
+	COMMAND bloodcast
+	TIER 3
+	SLOT 3
+END
+
+ID 157
+	NAME Blood for Blood
+	TYPE 1
+	TIER 3
+	SLOT 5
+END
+
+ID 158
+	NAME Heavy Weaponry
+	TYPE 1
+	TIER 3
+	SLOT 8
+	EFFECT
+		TYPE 7
+		VAL 1 4
+		VAL 3 -20
+		COND
+			TARGET 2
+			FUNC 4
+			VAL 1
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+END
+
+ID 159
+	NAME Ki Strike
+	COMMAND kistrike
+	TARGET 3
+	KEYWORD 2050
+	FLAG 1
+	MANA 90
+	MANASCALE 30
+	DELAY 10
+	TIER 5
+	SLOT 3
+	EMOTE
+		TYPE 1
+		SELF You channel your inner ki into your attack.
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 75
+	END
+END
+
+ID 160
+	NAME Chakra
+	COMMAND chakra
+	TARGET 2
+	KEYWORD 4098
+	MANA 60
+	MANASCALE 20
+	DELAY 50
+	FLOOR 20
+	TIER 3
+	SLOT 3
+	EFFECT
+		TYPE 5
+		VAL 0 100
+		VAL 1 4
+		VAL 2 8
+		VAL 5 4
+		VAL 6 1
+		VAL 7 8
+		EMOTE
+			SELF You tap and jab pressure points to allow the energy to flow through $N.
+			TARGET $n taps and jabs pressure points to allow the energy to flow through you.
+			OTHERS $n taps and jabs pressure points to allow the energy to flow through $N.
+			SELFTARGET You tap and jab pressure points to allow the energy to flow through yourself.
+		END
+		EMOTE
+			TYPE 2
+			SELF $N is not in need of recovery.
+			SELFTARGET You are not in need of recovery.
+		END
+	END
+END
+
+ID 161
+	NAME Purify
+	COMMAND purify
+	TARGET 2
+	KEYWORD 2
+	MANA 75
+	MANASCALE 25
+	DELAY 40
+	FLOOR 15
+	TIER 4
+	SLOT 3
+	EFFECT
+		TYPE 10
+		VAL 0 100
+		EMOTE
+			SELF You purify $N.
+			TARGET $n purifies you.
+			OTHERS $n purifies $N.
+			SELFTARGET You purify yourself.
+		END
+	END
+END
+
+ID 162
+	NAME Revive
+	COMMAND revive
+	TARGET 12
+	KEYWORD 2
+	FLAG 4
+	MANA 60
+	MANASCALE 20
+	DELAY 40
+	FLOOR 20
+	TIER 4
+	SLOT 3
+	EFFECT
+		TYPE 8
+		VAL 0 100
+		VAL 1 10
+		EMOTE
+			SELF $N is bathed in white light and comes back to life!
+			TARGET You are bathed in white light and comes back to life!
+			OTHERS $N is bathed in white light and comes back to life!
+			SELFTARGET You are bathed in white light and comes back to life!
+		END
+		EMOTE
+			TYPE 2
+			SELF $N is not dead.
+		END
+	END
+END
+
+ID 163
+	NAME Mystic Reverberations
+	TIER 3
+	SLOT 4
+END
+
+ID 164
+	NAME Stomp
+	COMMAND stomp
+	TARGET 6
+	KEYWORD 131
+	FLAG 64
+	MANA 90
+	MANASCALE 30
+	DELAY 50
+	FLOOR 15
+	TIER 2
+	SLOT 3
+	EMOTE
+		TYPE 1
+		SELF You stomp your foot, causing sharp columns to rise from the ground!
+		OTHERS You stomp your foot, causing sharp columns to rise from the ground!
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 10
+		VAL 5 5
+		VAL 6 1
+		VAL 7 10
+		EMOTE
+			HEALTH 1
+			SELF $N is hit for $T damage.
+			TARGET You are hit for $T damage.
+			OTHERS $N is hit for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF $N is able to dodge out of the way.
+			TARGET You are able to dodge out of the way.
+			OTHERS $N is able to dodge out of the way.
+		END
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 100
+		VAL 1 4
+		VAL 2 10
+		VAL 5 5
+		VAL 6 1
+		VAL 7 10
+		EMOTE
+			HEALTH 1
+			SELF $N is hit for $T damage.
+			TARGET You are hit for $T damage.
+			OTHERS $N is hit for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF $N is able to dodge out of the way.
+			TARGET You are able to dodge out of the way.
+			OTHERS $N is able to dodge out of the way.
+		END
+	END
+END
+
+ID 165
+	NAME Powerchain
+	TYPE 1
+	TIER 4
+	SLOT 3
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 19
+		VAL 3 25
+		COND
+			TARGET 1
+			FUNC 10
+			ARG 100
+			COMP 4
+			VAL 100
+		END
+	END
+END
+
+ID 166
+	NAME Counter
+	TYPE 2
+	TIER 4
+	SLOT 5
+END
+
+ID 167
+	NAME Caress
+	TYPE 1
+	TIER 2
+	SLOT 4
+END
+
+ID 168
+	NAME Building Flourish
+	COMMAND buildingflourish
+	KEYWORD 1026
+	FLAG 1024
+	MANA 48
+	MANASCALE 16
+	DELAY 30
+	FLOOR 15
+	TIER 1
+	SLOT 3
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 19
+		VAL 3 25
+		VAL 4 -3
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 21
+		VAL 3 10
+		VAL 4 -3
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 20
+		VAL 3 10
+		VAL 4 -3
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 11
+			VAL 1
+		END
+	END
+END
+
+ID 169
+	NAME Eviscerate
+	COMMAND eviscerate
+	TARGET 3
+	KEYWORD 2050
+	FLAG 32
+	MANA 48
+	MANASCALE 16
+	TIER 2
+	SLOT 3
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 10 20
+	END
+END
+
+ID 170
+	NAME Focus on the Prey
+	TYPE 1
+	TIER 3
+	SLOT 3
+END
+
+ID 171
+	NAME Into the Maelstrom
+	TYPE 1
+	TIER 4
+	SLOT 4
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 7
+		VAL 3 10
+		COND
+			FUNC 8
+		END
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 21
+		VAL 3 10
+		COND
+			FUNC 8
+		END
+	END
+END
+
+ID 172
+	NAME Ranged Weaponry
+	TYPE 1
+	TIER 5
+	SLOT 8
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 22
+		VAL 3 50
+		COND
+			TARGET 2
+			FUNC 5
+			VAL 1
+		END
+	END
+END
+
+ID 173
+	NAME Blade Defense
+	TYPE 1
+	TIER 5
+	SLOT 3
+END
+
+ID 174
+	NAME Adrenaline
+	TYPE 1
+	TIER 4
+	SLOT 3
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 19
+		VAL 3 25
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 0
+		END
+		COND
+			FUNC 10
+			COMP 2
+			VAL 25
+		END
+		COND
+			TARGET 3
+			FUNC 2
+			ARG 12
+		END
+	END
+END
+
+ID 175
+	NAME Last Stand
+	TYPE 1
+	TIER 3
+	SLOT 4
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 35
+		VAL 3 -25
+		COND
+			FUNC 7
+			ARG 1
+			VAL 1
+		END
+		COND
+			FUNC 10
+			COMP 2
+			VAL 25
+		END
+	END
+END
+
+ID 176
+	NAME Blitz
+	COMMAND blitz
+	TARGET 3
+	KEYWORD 2050
+	TIER 2
+	SLOT 3
+	EFFECT
+		TYPE 1
+		VAL 0 140
+		VAL 1 1
+		VAL 4 -25
+	END
+END
+
+ID 177
+	NAME Circle
+	COMMAND circle
+	TARGET 3
+	KEYWORD 3074
+	TIER 1
+	SLOT 3
+	EMOTE
+		TYPE 1
+		SELF You circle $N.
+		TARGET $n circles you.
+		OTHERS $n circles $N.
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 80
+		VAL 1 1
+		VAL 4 25
+	END
+END
+
+ID 178
+	NAME Improved Initiative
+	TYPE 1
+	TIER 3
+	SLOT 3
+END
+
+ID 179
+	NAME Flourish
+	COMMAND flourish
+	TARGET 3
+	KEYWORD 2050
+	FLAG 96
+	MANA 60
+	MANASCALE 20
+	DELAY 5
+	TIER 4
+	SLOT 3
+	EFFECT
+		TYPE 1
+		VAL 0 65
+		VAL 1 1
+		VAL 4 -44
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 65
+		VAL 1 1
+		VAL 4 -44
+	END
+	EFFECT
+		TYPE 1
+		VAL 0 65
+		VAL 1 1
+		VAL 4 -44
+	END
+END
+
+ID 180
+	NAME Mug
+	COMMAND mug
+	TARGET 3
+	KEYWORD 2050
+	DELAY 40
+	FLOOR 20
+	CD 9999
+	SLOT 3
+	EFFECT
+		TYPE 1
+		VAL 0 65
+		VAL 1 1
+		VAL 2 6
+		VAL 5 3
+		VAL 6 1
+		VAL 7 8
+		EMOTE
+			HEALTH 1
+			SELF You swing your dagger at $N, slicing for $T damage.
+			TARGET $n swings $s dagger at you, slicing for $T damage.
+			OTHERS $n swings $s dagger at $N, slicing for $T damage.
+		END
+		EMOTE
+			TYPE 1
+			SELF You swing your dagger at $N, but miss.
+			TARGET $n swings $s dagger at you, but misses.
+			OTHERS $n swings $s dagger at $N, but misses.
+		END
+	END
+	EFFECT
+		TYPE 11
+		VAL 0 100
+		EMOTE
+			SELF You steal $T gold!
+			TARGET $n stole $T gold from you!
+		END
+	END
+END
+
+ID 181
+	NAME Foresight
+	COMMAND foresight
+	TARGET 2
+	KEYWORD 8197
+	MANA 60
+	MANASCALE 20
+	DELAY 30
+	FLOOR 15
+	CHARGE 10
+	TIER 1
+	SLOT 3
+	EFFECT
+		TYPE 2
+		VAL 0 100
+		VAL 1 43
+		VAL 2 60
+	END
+END
+
+ID 182
+	NAME Steelguard
+	COMMAND steelguard
+	KEYWORD 1026
+	DELAY 50
+	FLOOR 30
+	TIER 1
+	SLOT 3
+	EMOTE
+	END
+	EFFECT
+		TYPE 7
+		VAL 0 100
+		VAL 1 9
+		VAL 3 40
+		VAL 4 -2
+	END
+END
+
+EOF
