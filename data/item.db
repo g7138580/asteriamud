@@ -1,0 +1,36 @@
+ID 1
+	NAME Iron Mailed Kilt
+	DESC Small scales of light grey iron are interwoven to create the light mesh which is tied about the waist using a leather belt.  
+	ARTICLE 1
+	TYPE 8
+	FLAGS 4194304
+	TIER 2
+	COST 1000
+	ARMOR
+		TYPE 2
+		SLOT 4
+		ARM 2
+		MARM 2
+	END
+END
+
+ID 114
+	NAME Steel Shortsword
+	DESC The short double-edged blade was forged from glinting steel. The sword has a single-handed grip made of white pearl, with a round steel pommel at the bottom.  
+	TYPE 4
+	TIER 1
+	COST 100
+	WEAPON
+		TYPE 5
+		DELAY 50
+		FLOOR 20
+		MSGTYPE 7
+		DICENUM 1
+		DICESIZE 10
+		POWER 8
+		HANDINESS 1
+		PROP 0 10
+	END
+END
+
+EOF

@@ -1,0 +1,75 @@
+ID 0
+	NAME None
+END
+
+ID 1
+	NAME Warrior
+	STR 4
+	VIT 4
+	SPD 2
+	HP 70
+	MP 30
+END
+
+ID 2
+	NAME Rogue
+	STR 3
+	VIT 1
+	SPD 6
+	HP 60
+	MP 40
+END
+
+ID 3
+	NAME Ranger
+	STR 5
+	VIT 2
+	SPD 3
+	HP 60
+	MP 40
+END
+
+ID 4
+	NAME Sorcerer
+	INT 5
+	SPR 5
+	MP 100
+END
+
+ID 5
+	NAME Wizard
+	INT 5
+	SPR 5
+	MP 100
+END
+
+ID 6
+	NAME Mystic
+	SPD 3
+	INT 3
+	SPR 4
+	HP 30
+	MP 70
+END
+
+ID 7
+	NAME Monk
+	STR 3
+	VIT 3
+	SPD 2
+	INT 2
+	HP 70
+	MP 30
+END
+
+ID 8
+	NAME Spellsword
+	STR 3
+	VIT 2
+	INT 3
+	SPR 2
+	HP 50
+	MP 50
+END
+
+EOF

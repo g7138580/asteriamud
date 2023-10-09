@@ -1,0 +1,57 @@
+ID 156
+	NAME Troll Wizard
+	DESC Before you stands a large humanoid beast with long limbs, sharps claws and a short layer of dense, brown fur. The troll has ghastly, yellow eyes and a drooling, ugly mouth full of pointy teeth. Though docile, it has been trained in magic for the purposes of testing young adventurers.
+	FLAGS 1
+	LOOT 300
+	LVL 2
+	STAT 0 0 0 0 0
+	EMOTE
+		TYPE 2
+		OTHERS $n walks $T.
+	END
+	ACTION
+		NAME Lightning Bolt
+		SPELL 0
+		EMOTE
+			TYPE 1
+			HEALTH 1
+			TARGET $n summons a bolt of lightning to strike you for $T damage.
+			OTHERS $n summons a bolt of lightning to strike $N for $T damage.
+		END
+		EMOTE
+			TYPE 2
+			TARGET $n summons a bolt of lightning to strike you, but misses.
+			OTHERS $n summons a bolt of lightning to strike $N, but misses.
+		END
+	END
+END
+
+ID 157
+	NAME Troll Warrior
+	DESC Before you stands a large humanoid beast with long limbs, sharps claws and a short layer of dense, brown fur. The troll has ghastly, yellow eyes and a drooling, ugly mouth full of pointy teeth. Though docile, it has been trained in battle for the purposes of testing young adventurers.
+	FLAGS 1
+	LOOT 300
+	LVL 2
+	STAT 0 0 0 0 0
+	EMOTE
+		TYPE 2
+		OTHERS $n walks $T.
+	END
+	ACTION
+		NAME Claws
+		SPELL 0
+		EMOTE
+			TYPE 1
+			HEALTH 1
+			TARGET $n claws at you for $T damage.
+			OTHERS $n claws at $N for $T damage.
+		END
+		EMOTE
+			TYPE 2
+			TARGET $n claws at you, but misses.
+			OTHERS $n claws at $N, but misses.
+		END
+	END
+END
+
+EOF

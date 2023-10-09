@@ -1,0 +1,336 @@
+ID 0
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You strike $N for $T damage.
+		TARGET $n strikes you for $T damage.
+		OTHERS $n strikes $N for $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You attempt to strike $N, but miss.
+		TARGET $n attempts to strike you, but misses.
+		OTHERS $n attempts to strike $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You throw a quick jab at $N for $T damage.
+		TARGET $n throws a quick jab at you for $T damage.
+		OTHERS $n throws a quick jab at $N for $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF Your quick jab at $N fails to connect.
+		TARGET $n throws a quick jab at you, but fails to connect.
+		OTHERS $n throws a quick jab at $N, but fails to connect.
+	END
+END
+
+ID 1
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 2
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 4
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 5
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 6
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You fire $p at $N, dealing $T damage.
+		TARGET $n fires $p at you, dealing $T damage.
+		OTHERS $n fires $p at $N, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You fire $p at $N, but miss.
+		TARGET $n fires $p at you, but misses.
+		OTHERS $n fires $p at $N, but misses.
+	END
+END
+
+ID 7
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your sword at $N and deal $T damage.
+		TARGET $n swings $s sword at you and deals $T damage.
+		OTHERS $n swings $s sword at $N and deals $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your sword at $N and miss.
+		TARGET $n swings $s sword at you and misses.
+		OTHERS $n swings $s sword at $N and misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 8
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 9
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 10
+	EMOTE
+		TYPE 1
+		SELF You try to stab $N with your dagger, but miss.
+		TARGET $n tries to stab you with $s dagger, but misses.
+		OTHERS $n tries to stab $N with $s dagger, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You stab $N with your dagger, causing $T damage.
+		TARGET $n stabs you with $s dagger, causing $T damage.
+		OTHERS $n stabs $N with $s dagger, causing $T damage.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing $p at $N and connect, dealing $T damage.
+		TARGET $n swings $p at you and connects, dealing $T damage.
+		OTHERS $n swings $p at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing $p at $N, but miss.
+		TARGET $n swings $p at you, but misses.
+		OTHERS $n swings $p at $N, but misses.
+	END
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $P at $N and connect, dealing $T damage.
+		TARGET $n swings $s $P at you and connects, dealing $T damage.
+		OTHERS $n swings $s $P at $N and connects, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $P at $N, but miss.
+		TARGET $n swings $s $P at you, but misses.
+		OTHERS $n swings $s $P at $N, but misses.
+	END
+END
+
+ID 12
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You fire $p at $N, dealing $T damage.
+		TARGET $n fires $p at you, dealing $T damage.
+		OTHERS $n fires $p at $N, dealing $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You fire $p at $N, but miss.
+		TARGET $n fires $p at you, but misses.
+		OTHERS $n fires $p at $N, but misses.
+	END
+END
+
+ID 18
+	EMOTE
+		TYPE 0
+		HEALTH 1
+		SELF You swing your $p at $N, connecting for $T damage.
+		TARGET $n swings $s $p at you, connecting for $T damage.
+		OTHERS $n swings $s $p at $N, connecting for $T damage.
+	END
+	EMOTE
+		TYPE 1
+		SELF You swing your $p at $N, but miss!
+		TARGET $n swings $s $p at you, but misses!
+		OTHERS $n swings $s $p at $N, but misses!
+	END
+END
+
+EOF

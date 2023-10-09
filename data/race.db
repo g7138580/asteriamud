@@ -1,0 +1,77 @@
+ID 0
+	NAME None
+END
+
+ID 1
+	NAME Human
+	DESC Versatile and able to make deals easily.
+	STAT 1 1
+	STAT 2 1
+	STAT 3 1
+	STAT 4 1
+	STAT 5 1
+	SPELL 125
+END
+
+ID 2
+	NAME Elf
+	DESC Intelligent and innately skilled with magic.
+	STAT 4 1
+	STAT 5 1
+	SPELL 127
+END
+
+ID 3
+	NAME Half-Elf
+	DESC Adventerous and spiritual.
+	STAT 1 1
+	STAT 4 1
+	SPELL 128
+END
+
+ID 4
+	NAME Dwarf
+	DESC Strong and tough.
+	STAT 2 1
+	STAT 5 1
+	SPELL 126
+END
+
+ID 5
+	NAME Half-Ogre
+	DESC Hardy and resilient.
+	STAT 2 2
+	SPELL 133
+END
+
+ID 6
+	NAME Fae
+	DESC Small and hard to hit.
+	STAT 3 1
+	STAT 5 1
+	SPELL 129
+END
+
+ID 7
+	NAME Goblin
+	DESC Quick and agile.
+	STAT 3 2
+	SPELL 130
+END
+
+ID 8
+	NAME Gnome
+	DESC Intelligent and skilled.
+	STAT 3 1
+	STAT 4 1
+	SPELL 131
+END
+
+ID 9
+	NAME Half-Orc
+	DESC Ferocious and mighty.
+	STAT 1 2
+	SPELL 132
+END
+
+EOF

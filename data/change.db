@@ -1,0 +1,110 @@
+1614975287 Greg Added a changes command.
+1614975656 Greg Health and Mana will regenerate much faster out of combat. This is to focus the balance on per combat rather than attrition.
+1615048861 Greg Educated (Elf) now increases mana by 20% up from 10% and no longer increases regen rates.
+1615048877 Greg Toughness (Half-Orc) now increases health by 20% up from 10% and no longer increases regen rates.
+1615225501 Greg Fixed issue with Last messages being invalid.
+1615229732 Greg Added guild ranks.
+1615229751 Greg Fixed shops for level, guild, and guild rank requirements.
+1615231008 Greg Guild ranks updated for new class system.
+1615239465 Greg Reputation back in.
+1615504641 Greg Manuals and Spell Tomes are now available and will randomly drop.
+1615504660 Greg Items have been changed to be independent of their templates, allowing for random loot.
+1615830099 Greg Fixed formatting of quests.
+1615830107 Greg Gold and XP flags now working properly for quests.
+1619115124 Greg Rooms no longer purge when a player is present.
+1619117025 Greg Boat to Kalmyr fixed.
+1620235931 Greg Fixed memory leak with GMCP not initializing properly.
+1622041348 Greg Mana does not regenerate when a spell is being held.
+1622049252 Greg Removed teachers. Abilities are gained through manuals and tomes.
+1630707795 Greg Lots of new stuff. Not really keeping up with this anymore.
+1633115960 Greg The first time you kill a monster you receive double exp.
+1636127174 Greg Completing a guild quest now makes you a member of that guild.
+1636131405 Greg Guild entrances have been fixed.
+1636146107 Greg Foraging/scavenging/etc are 40D 20F.
+1636150450 Greg Added a teacher at hessa village central to try out different abilities.
+1636406931 Greg xp and gold now update correctly in gmcp.
+1636406944 Greg Fixed crash with quests and shops.
+1636406966 Greg Weapons without emotes now default to a standard damage message.
+1636407584 Greg Channel tags now show in first person messaging.
+1636408202 Greg Channels will now display sender in gmcp.
+1636409011 Greg Abilities now have hyperlinks for help files
+1636409277 Greg questname now shows in gmcp
+1636411223 Greg Login correctly sent to gmcp channel.
+1636417838 Greg Fixed a display error when picking up an item that stacks.
+1636469727 Greg GMCP updates upon reconnecting
+1636478598 Greg Help files now have Required, Chance of Success fields.
+1636496872 Greg Logins now show when a player logs out.
+1636496882 Greg Fixed an issue with room flags not showing correctly in gmcp.
+1636497724 Greg Fixed a display issue with total players.
+1636497890 Greg Charges no longer go off after dying.
+1636642293 Greg Fixed doublehand.
+1636642301 Greg Quests you can't access should no longer show up in gmcp.
+1636645134 Greg Versatile changes now save over sessions.
+1636646518 Greg Recall stone fixed.
+1636646552 Greg Abilities in the Learn list now have help MXP links.
+1636647480 Greg GMCP stats should now be displayed correctly.
+1636728195 Greg Flying evasion no longer increases when using a ranged weapon.
+1636728378 Greg Bank commands now work at a bank.
+1636746584 Greg Item tier requirements prevent lower tiers from using.
+1636818502 Greg Initial random loot implemented.
+1636818514 Greg Shops will no longer allow you to buy items that you don't qualify for.
+1636818530 Greg Changed Required Tier to Required Level
+1636821529 Greg GMCP will now send discord info appropriately.
+1636822483 Greg Added tags to additional lines for items and mobs in room.
+1636922848 Greg XP Chart and monster xp changed
+1636991950 Greg GMCP room info sent using unique vnums for mapper.
+1637001638 Greg Added Room.WrongDir to GMCP
+1637014015 Greg Spells no longer stay held when killed.
+1637014077 Greg Boar hides now stack.
+1637083689 Greg Fixed multiple scripts.
+1637087268 Greg Monkey grip no longer lets you wield a bow and shield.
+1637337158 Greg Continued content additions to random loot
+1637348075 Greg Random Loot has been added to monsters for testing.
+1637424086 Greg Modified how item activations work.
+1637424109 Greg Fixed a crash that was caused due to deletion of items.
+1637510553 Greg Quest OLC completed.
+1637511116 Greg Quests will only be available if you are the appropriate tier.
+1637515047 Greg Pets are now functioning.
+1637594620 Greg Fixed memory corruption bug with vaults.
+1637594625 Greg Fixed memory corruption bug with pets.
+1637596676 Greg GMCP Enemies is in.
+1637599099 Greg GMCP Inventory.Worn in.
+1637599105 Greg GMCP Inventory.Backpack in.
+1637605458 Greg Summon Water Elemental ability added for testing out pets.
+1637606396 Greg Quest givers will still show in rooms even if you are not experienced enough to attempt it.
+1637606594 Greg You'll still update your journal when you look at a quest even if not experienced.
+1637610773 Greg Monsters no longer heal instantly out of combat.
+1637611527 Greg Monsters show health/mana.
+1637612049 Greg Health left against target is now shown.
+1637615871 Greg Unscarred gives a situational modifier, not power, resulting in slightly less damage.
+1637678534 Greg Rapid Fire no longer targets pets.
+1637680527 Greg Monsters now have a chance to spot you while you are hidden.
+1637708246 Greg Added various status effects.
+1637778164 Greg Affected screen updated.
+1637783562 Greg Quest xp reduced by 50%.
+1637789242 Greg Opposite status effects cancel each other out.
+1637793938 Greg Status Effects now are sent over GMCP.
+1637796910 Greg Advanced enemies added to GMCP.
+1637798736 Greg Room Items now sent to GMCP.
+1637853709 Greg Fixed scripting issues with pirate ships.
+1637855643 Greg Martyr now shows a message when triggering.
+1637855690 Greg Increased monster kill xp slightly.
+1637859375 Greg Advanced monsters now show up on a separate line in the room.
+1637940465 Greg Death penalties now only reduce your kill bonus to 0% and takes half of the gold you are carrying.
+1637948873 Greg Tier shows in score and when examined.
+1637951919 Greg Kill Bonus is sent through GMCP.
+1637968044 Greg Boon and Jinx added.
+1638199123 Greg Status effects no longer stay on death.
+1638199402 Greg Time of Day shows in GMCP.
+1638199409 Greg Season shows in GMCP.
+1638199564 Greg Tier shows in GMCP.
+1638200453 Greg You may no longer unprepare Monkey Grip when wielding two handed weapons.
+1638200601 Greg Fixed several quest chains for tier appropriateness.
+1638202755 Greg Help files show damage formula and adjustments.
+1638203831 Greg Destiny sent via GMCP.
+1638203842 Greg Destiny is now tied to account instead of character.
+1638204671 Greg Fixed "You stop charging..." message when releasing a charged ability.
+1638204721 Greg Fixed status effects from being placed on you after dying.
+1638205076 Greg Journal entries now show Tier required for the quest.
+1638205529 Greg Charging abilities and cast spells show in GMCP.
+1689274030 Greg block no longer requires stamina
